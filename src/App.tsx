@@ -10,6 +10,13 @@ function App() {
     {title:'wideblock', destination:'./', color:'#CC3FB6'},
     {title:'wideblock', destination:'./', color:'#F58514'}
   ]
+  const quicknavoptions: { 
+    title: string; 
+    destination: string;
+  }[] = [
+    {title:'wideblock', destination:'./'},
+    {title:'wideblock', destination:'./'}
+  ]
 
   return (
     <div className="App">
@@ -31,6 +38,12 @@ function App() {
           ))}
         </div>
       </nav>
+      <div className='quicknav'>
+        {quicknavoptions.map((option)=>(
+          <div className='quicknavoption'></div>
+        ))}
+        <div className='quicknavbutton'></div>
+      </div>
     </div>
   );
 }
