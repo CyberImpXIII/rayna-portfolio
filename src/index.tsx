@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter,  Routes,
-  Route } from "react-router-dom";
-import './index.css';
-import App from './App';
+import { BrowserRouter,  Routes, Route } from "react-router-dom";
+import './styles/index.css';
+import App from './routes/App';
+import Nav from './components/Nav';
+import Quicknavoptioninterface from './interfaces/quicknavoptioninterface';
 import Test from './routes/test';
 import reportWebVitals from './reportWebVitals';
+import Header from './components/Header';
 
-const quicknavoptions: { 
-  title: string; 
-  destination: string;
-}[] = [
+const quicknavoptions:Quicknavoptioninterface[] = [
   {title:'wideblock', destination:'./'},
   {title:'wideblock', destination:'./'}
 ]
@@ -20,11 +19,15 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <BrowserRouter>
-      <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="test" element={<Test />} />
-      {/* <Route path="invoices" element={<Invoices />} /> */}
-    </Routes>
+      <Header/>
+      <Nav/>
+      <div style={{width:'100%', height:'100%'}}>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="test" element={<Test />} />
+          {/* <Route path="invoices" element={<Invoices />} /> */}
+        </Routes>
+      </div>
 </BrowserRouter>);
 
 // If you want to start measuring performance in your app, pass a function
