@@ -21,7 +21,7 @@ root.render(
   <BrowserRouter>
       <Header/>
       <Nav/>
-      <div style={{width:'100%', height:'100%'}}>
+      <div className='pageContainer'>
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="test" element={<Test />} />
