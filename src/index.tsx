@@ -8,24 +8,32 @@ import Quicknavoptioninterface from './interfaces/quicknavoptioninterface';
 import Test from './routes/test';
 import reportWebVitals from './reportWebVitals';
 import Header from './components/Header';
+import QuickNav from './components/QuickNav';
 
 const quicknavoptions:Quicknavoptioninterface[] = [
-  {title:'wideblock', destination:'./'},
-  {title:'wideblock', destination:'./'}
+
+    {title:'FARMSHELF',  destination:'./farmshelf'},
+    {title:'MCNY',  destination:'./mcny'},
+    {title:'FLETCHER\'S FAE',  destination:'./fletchersfae'},
+    {title:'GOOGLE CAMBRIDGE',  destination:'./googlecambridge'},
+    {title:'SYMPOSIA',  destination:'./symposia'},
 ]
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <BrowserRouter>
+    <BrowserRouter>
+    <link rel="stylesheet" href="https://use.typekit.net/jsp6plk.css"></link>
       <Header/>
       <Nav/>
+      <QuickNav/>
       <div className='pageContainer'>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="test" element={<Test />} />
-          {/* <Route path="invoices" element={<Invoices />} /> */}
+          {quicknavoptions.map((route)=>{
+            return(<Route path={route.destination} element={<Test />} />)
+          })}
         </Routes>
       </div>
 </BrowserRouter>);
