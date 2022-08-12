@@ -1,0 +1,7 @@
+.downArrow{
+    transition: transform 0.2s;
+}
+
+.downArrowContainer{
+    padding: 23px 15px;
+}
