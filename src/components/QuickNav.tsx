@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { Link } from "react-router-dom";
 import QuickNavOptionInterface from "../interfaces/quicknavoptioninterface"
+import DownArrow from "./DownArrow";
+import '../styles/QuickNav.css'
 
 function QuickNav(){
     const [quickNavOptions, setQuickNavOptions] = useState<QuickNavOptionInterface[]>([
@@ -24,7 +26,7 @@ function QuickNav(){
       }
       )}
       </div>
-    <div className='quicknavbutton'></div>
+    <div className='quicknavbutton'><DownArrow dropDown={dropDownActive}/></div>
   </div>
   )}
 

@@ -1,5 +1,7 @@
 import { useState } from "react"
 import NavOptionsInterface from "../interfaces/navoptionsinterface"
+import '../styles/Navigation.css'
+
 const Nav = ()=>{
   const [navOptions, setNavOptions] = useState<NavOptionsInterface[]>(
     [{title:'Print', color: '#000000', destination:''},
