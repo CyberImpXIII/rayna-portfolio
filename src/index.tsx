@@ -9,15 +9,7 @@ import Test from './routes/test';
 import reportWebVitals from './reportWebVitals';
 import Header from './components/Header';
 import QuickNav from './components/QuickNav';
-
-const quicknavoptions:Quicknavoptioninterface[] = [
-
-    {title:'FARMSHELF',  destination:'./farmshelf'},
-    {title:'MCNY',  destination:'./mcny'},
-    {title:'FLETCHER\'S FAE',  destination:'./fletchersfae'},
-    {title:'GOOGLE CAMBRIDGE',  destination:'./googlecambridge'},
-    {title:'SYMPOSIA',  destination:'./symposia'},
-]
+import ContentContainer from './components/ContentContainer';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -28,14 +20,7 @@ root.render(
       <Header/>
       <Nav/>
       <QuickNav/>
-      <div className='pageContainer'>
-        <Routes>
-          <Route path="/" element={<App />} />
-          {quicknavoptions.map((route)=>{
-            return(<Route path={route.destination} element={<Test />} />)
-          })}
-        </Routes>
-      </div>
+      <ContentContainer />
 </BrowserRouter>);
 
 // If you want to start measuring performance in your app, pass a function
