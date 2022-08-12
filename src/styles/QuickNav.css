@@ -1,0 +1,25 @@
+.quicknav{
+    overflow:hidden;
+    transition: height 0.2s;
+    z-index:100;
+    width: 640px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    display: flex;
+  }
+  
+  .quicknavoption{
+    box-sizing: border-box;
+    border:1px solid white;
+    width:560px;
+    height:100px;
+    background-color:black;
+  }
+  
+  .quicknavbutton{
+    height:100px;
+    width:80px;
+    background-color:white;
+  }
