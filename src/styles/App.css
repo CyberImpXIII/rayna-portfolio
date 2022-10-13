@@ -55,3 +55,14 @@
     transform: rotate(360deg);
   }
 }
+@media screen and (max-width:1040px){
+  .wideblock.black.title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .headerrainbow{
+    width: 100%!important;
+    background-image:repeating-linear-gradient(to left, #52A9FF 0px,#52A9FF 79px, #F58514 80px, #F58514 159px, #0A70D5 160px, #0A70D5 239px, #F7A0E9 240px, #F7A0E9 319px, #31A00F 320px, #52A9FF 399px, #52A9FF 400px, #E6BE38 479px, 480px, #E6BE38 559px,#CC3FB6 560px,  #CC3FB6 639px);
+  }
+}

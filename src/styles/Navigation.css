@@ -38,3 +38,12 @@
     height:calc(100vh - 100px);
     background-image:repeating-linear-gradient(to bottom, #F7A0E9 0px, #F7A0E9 99px, #CC3FB6 100px, #CC3FB6 199px, #F58514 200px, #F58514 299px, #31A00F 300px, #31A00F 399px, #E6BE38 400px, #E6BE38 499px, #0A70D5 500px, #0A70D5 599px, #5FD53B 600px, #5FD53B 699px, #52A9FF 700px, #52A9FF 799px)
   }
+
+  @media screen and (max-width: 1024px)  {
+    .navigation{
+      display:none;
+    }
+    .quicknav{
+      display:none!important;
+    }
+  }

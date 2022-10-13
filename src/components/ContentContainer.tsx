@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import { useState } from "react"
-import App from "../routes/App"
+import Content from "./Content"
+import App from './App'
 import QuickNavOptionInterface from "../interfaces/quicknavoptioninterface"
 const ContentContainer = ()=>{
     const [routes, setRoutes] = useState<QuickNavOptionInterface[]>([
