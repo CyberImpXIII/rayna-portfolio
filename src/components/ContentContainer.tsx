@@ -13,6 +13,7 @@ const ContentContainer = ()=>{
     ]);
     return(
         <div className='pageContainer'>
+          <img className="projectImage" src="https://drive.google.com/uc?export=view&id=0BwU3sE6nwnntVnZTNHRoMFJTc3M"/>
         <Routes>
           <Route path="/" element={<App />} />
           {routes.map((route)=>{
