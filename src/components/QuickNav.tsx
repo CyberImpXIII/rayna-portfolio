@@ -6,11 +6,11 @@ import '../styles/QuickNav.css'
 
 function QuickNav(){
     const [quickNavOptions, setQuickNavOptions] = useState<QuickNavOptionInterface[]>([
-      {title:'FARMSHELF',  destination:'./farmshelf'},
-      {title:'MCNY',  destination:'./mcny'},
-      {title:'FLETCHER\'S FAE',  destination:'./fletchersfae'},
-      {title:'GOOGLE CAMBRIDGE',  destination:'./googlecambridge'},
-      {title:'SYMPOSIA',  destination:'./symposia'},
+      {title:'FARMSHELF', img:'test', destination:'./farmshelf'},
+      {title:'MCNY', img:'test', destination:'./mcny'},
+      {title:'FLETCHER\'S FAE', img:'test', destination:'./fletchersfae'},
+      {title:'GOOGLE CAMBRIDGE', img:'test', destination:'./googlecambridge'},
+      {title:'SYMPOSIA', img:'test', destination:'./symposia'},
     ])
     const [dropDownActive, setDropDownActive] = useState<Boolean>(false);
 
