@@ -25,6 +25,7 @@
 }
 
 .App-header {
+  position:fixed;
   display: flex;
   align-items: left;
   width:100vw;

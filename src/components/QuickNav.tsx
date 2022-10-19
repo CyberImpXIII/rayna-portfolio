@@ -17,14 +17,16 @@ function QuickNav(){
     return(      
     <div className='quicknav' style={dropDownActive?{height:`${(quickNavOptions.length)*100}px`}:{height:'100px'}} onClick={()=>{setDropDownActive(!dropDownActive)}}>
       <div>
-      {quickNavOptions.map((option, index)=>{
+      <Link to={quickNavOptions[0].destination}><div className='quicknavoption title'>{quickNavOptions[0].title}</div></Link>
+        lorem ipsum dolor
+      {/* {quickNavOptions.map((option, index)=>{
         if(index > 0){
           return(<Link to={option.destination}><div className='quicknavoption title'>{option.title}</div></Link>)
         }else{
           return(<div className='quicknavoption title'>{option.title}</div>)
         }
       }
-      )}
+      )} */}
       </div>
     <div className='quicknavbutton'><DownArrow dropDown={dropDownActive}/></div>
   </div>

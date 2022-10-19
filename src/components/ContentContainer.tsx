@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import { useState } from "react"
 import Content from "./Content"
+import "../styles/Project.css"
 import App from './App'
 import QuickNavOptionInterface from "../interfaces/quicknavoptioninterface"
 const ContentContainer = ()=>{

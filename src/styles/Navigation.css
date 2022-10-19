@@ -1,9 +1,16 @@
 
 .navigation{
-    position:relative;
+    position:fixed;
+    top:100px;
     width:240px;
+    z-index:1;
+    transition: width 1s;
   }
   
+.navigation:hover{
+  width: 400px;
+}
+
   .navoptions{
     position:absolute;
     top:100px;
