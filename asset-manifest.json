@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rayna-portfolio/static/css/main.d5ea2389.css",
-    "main.js": "/rayna-portfolio/static/js/main.3938081e.js",
+    "main.js": "/rayna-portfolio/static/js/main.215a0669.js",
     "static/js/787.6d6cbb34.chunk.js": "/rayna-portfolio/static/js/787.6d6cbb34.chunk.js",
     "static/media/LegRoom_Mockup_10-24-22.png": "/rayna-portfolio/static/media/LegRoom_Mockup_10-24-22.b8bac8b94d2633a81128.png",
     "static/media/Symposia WEBSITE MOCKUPS.png": "/rayna-portfolio/static/media/Symposia WEBSITE MOCKUPS.af6d2f60052364c538c0.png",
@@ -22,11 +22,11 @@
     "static/media/Symposia WEBSITE MOCKUPS2.png": "/rayna-portfolio/static/media/Symposia WEBSITE MOCKUPS2.f6039357d2642cdb9d8e.png",
     "index.html": "/rayna-portfolio/index.html",
     "main.d5ea2389.css.map": "/rayna-portfolio/static/css/main.d5ea2389.css.map",
-    "main.3938081e.js.map": "/rayna-portfolio/static/js/main.3938081e.js.map",
+    "main.215a0669.js.map": "/rayna-portfolio/static/js/main.215a0669.js.map",
     "787.6d6cbb34.chunk.js.map": "/rayna-portfolio/static/js/787.6d6cbb34.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5ea2389.css",
-    "static/js/main.3938081e.js"
+    "static/js/main.215a0669.js"
   ]
 }
