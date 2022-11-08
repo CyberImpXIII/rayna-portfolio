@@ -1,15 +1,32 @@
 {
   "files": {
-    "main.css": "/rayna-portfolio/static/css/main.8569df6e.css",
-    "main.js": "/rayna-portfolio/static/js/main.a0219571.js",
+    "main.css": "/rayna-portfolio/static/css/main.d5ea2389.css",
+    "main.js": "/rayna-portfolio/static/js/main.a390cfc8.js",
     "static/js/787.6d6cbb34.chunk.js": "/rayna-portfolio/static/js/787.6d6cbb34.chunk.js",
+    "static/media/LegRoom_Mockup_10-24-22.png": "/rayna-portfolio/static/media/LegRoom_Mockup_10-24-22.b8bac8b94d2633a81128.png",
+    "static/media/Symposia WEBSITE MOCKUPS.png": "/rayna-portfolio/static/media/Symposia WEBSITE MOCKUPS.af6d2f60052364c538c0.png",
+    "static/media/Symposia WEBSITE MOCKUPS5.png": "/rayna-portfolio/static/media/Symposia WEBSITE MOCKUPS5.a4cc9632e6887c340a4e.png",
+    "static/media/Farmshelf-mockups_9-26-21_sales-postcard.png": "/rayna-portfolio/static/media/Farmshelf-mockups_9-26-21_sales-postcard.b631f49c73cd353d6ed4.png",
+    "static/media/Farmshelf-mockups_9-26-21_collateral-booklet.png": "/rayna-portfolio/static/media/Farmshelf-mockups_9-26-21_collateral-booklet.8190700b17fa8a87da4c.png",
+    "static/media/Farmshelf-mockups_9-26-21_bookmark.png": "/rayna-portfolio/static/media/Farmshelf-mockups_9-26-21_bookmark.1ce7a1e77d599d50a268.png",
+    "static/media/4-MCNY mockups_activist-postcard.png": "/rayna-portfolio/static/media/4-MCNY mockups_activist-postcard.c71cefa23cf2f4bcdf28.png",
+    "static/media/Fletcher_s-fae-logo-mockup.png": "/rayna-portfolio/static/media/Fletcher_s-fae-logo-mockup.a64f9a67c0e2b9111fbd.png",
+    "static/media/3-MCNY mockups_germ-city-poster.png": "/rayna-portfolio/static/media/3-MCNY mockups_germ-city-poster.0240dab153410316ba99.png",
+    "static/media/5-MCNY mockups_berg-program.png": "/rayna-portfolio/static/media/5-MCNY mockups_berg-program.d0ba18d0c73b202b9906.png",
+    "static/media/2-MCNY mockups_germ-city-book.png": "/rayna-portfolio/static/media/2-MCNY mockups_germ-city-book.75ed620c7d047129c097.png",
+    "static/media/Farmshelf-mockups_9-26-21_nutrient-instruction-postcard.png": "/rayna-portfolio/static/media/Farmshelf-mockups_9-26-21_nutrient-instruction-postcard.c10503406c5588fc829a.png",
+    "static/media/Farmshelf-mockups_9-26-21_welcome-postcard.png": "/rayna-portfolio/static/media/Farmshelf-mockups_9-26-21_welcome-postcard.5e0ef520c17409549d19.png",
+    "static/media/1-MCNY mockups_uptown-bounce.png": "/rayna-portfolio/static/media/1-MCNY mockups_uptown-bounce.237f4eae10190652c33f.png",
+    "static/media/Symposia WEBSITE MOCKUPS4.png": "/rayna-portfolio/static/media/Symposia WEBSITE MOCKUPS4.1242920a897e337bb256.png",
+    "static/media/Symposia WEBSITE MOCKUPS3.png": "/rayna-portfolio/static/media/Symposia WEBSITE MOCKUPS3.17423392e16af905f39d.png",
+    "static/media/Symposia WEBSITE MOCKUPS2.png": "/rayna-portfolio/static/media/Symposia WEBSITE MOCKUPS2.f6039357d2642cdb9d8e.png",
     "index.html": "/rayna-portfolio/index.html",
-    "main.8569df6e.css.map": "/rayna-portfolio/static/css/main.8569df6e.css.map",
-    "main.a0219571.js.map": "/rayna-portfolio/static/js/main.a0219571.js.map",
+    "main.d5ea2389.css.map": "/rayna-portfolio/static/css/main.d5ea2389.css.map",
+    "main.a390cfc8.js.map": "/rayna-portfolio/static/js/main.a390cfc8.js.map",
     "787.6d6cbb34.chunk.js.map": "/rayna-portfolio/static/js/787.6d6cbb34.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8569df6e.css",
-    "static/js/main.a0219571.js"
+    "static/css/main.d5ea2389.css",
+    "static/js/main.a390cfc8.js"
   ]
 }
