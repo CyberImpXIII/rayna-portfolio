@@ -4,11 +4,11 @@ import '../styles/Navigation.css'
 
 const Nav = ()=>{
   const [navOptions, setNavOptions] = useState<NavOptionsInterface[]>(
-    [{title:'Print', color: '#000000', destination:''},
-    {title:'Digital', color: '#F58514', destination:''},
-    {title:'Spaces', color: '#31A00F', destination:''},
-    {title:'Illustration', color: '#E6BE38', destination:''},
-    {title:'About', color: '#0A70D5', destination:''}]
+    [{title:'Print', color: '#000000', destination:'print'},
+    {title:'Digital', color: '#F58514', destination:'digital'},
+    {title:'Spaces', color: '#31A00F', destination:'space'},
+    {title:'Illustration', color: '#E6BE38', destination:'illustration'},
+    {title:'About', color: '#0A70D5', destination:'about'}]
     )
   return(
     <nav className='navigation'>
