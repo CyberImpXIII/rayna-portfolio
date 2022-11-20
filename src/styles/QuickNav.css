@@ -1,14 +1,37 @@
 .quicknav{
     overflow:hidden;
-    transition: height 0.2s;
     z-index:100;
     width: 640px;
-    height: 100px;
-    position: absolute;
+    position: fixed;
     top: 100px;
     right: 80px;
     display: flex;
     background-color: white;
+  }
+
+  .quicknavTextHeight{
+    transition: max-height 1s;
+    max-height: 0px;
+    overflow: hidden;
+    height:0px;
+  }
+
+  .quicknavTextPadding{
+    padding:0px 25px;
+    transition-property: padding;
+    transition-duration:1s;
+  }
+
+  .quicknavTextHeightActive{
+    max-height:100vh;
+    transition: max-height 1s;
+    height:auto;
+  }
+
+  .quicknavTextPaddingActive{
+    padding:30px 25px;
+    transition-property: padding;
+    transition-duration:1s;
   }
   
   .quicknavoption{

@@ -9,6 +9,10 @@ import Spaces from "./pages/Spaces"
 import Illustration from "./pages/Illustration"
 import About from "./pages/About"
 import Symposia from './projects/Symposia'
+import Farmshelf from './projects/Farmshelf'
+import MuseumOTCityOfNewYork from "./projects/MuseumOTCityOfNewYork"
+
+
 const ContentContainer = ()=>{
     // const [routes, setRoutes] = useState<QuickNavOptionInterface[]>([
     //     {title:'FARMSHELF', img:'test',  destination:'./farmshelf'},
@@ -21,14 +25,17 @@ const ContentContainer = ()=>{
     return(
         <div className='pageContainer' >
         <Routes>
-          <Route path="/" element={<App />} />
-          <Route path={`print`} element={<Print />} />
-          <Route path={`digital`} element={<Digital />} />
-          <Route path={`spaces`} element={<Spaces />} />
-          <Route path={`Illustration`} element={<Illustration />} />
-          <Route path={`About`} element={<About />} />
+          <Route path={`/print`} element={<Print />} />
+          <Route path={`/digital`} element={<Digital />} />
+          <Route path={`/space`} element={<Spaces />} />
+          <Route path={`/Illustration`} element={<Illustration />} />
+          <Route path={`/About`} element={<About />} />
           {/*projects*/}
-          <Route path={`Symposia`} element={<Symposia />} />
+          <Route path={`/Symposia`} element={<Symposia />} />
+          <Route path={`/Farmshelf`} element={<Farmshelf />} />
+          <Route path={`/museumotcny`} element={<MuseumOTCityOfNewYork />} />
+          {/* <Route path={`museumotcny`} element={<MuseumOTCityOfNewYork />} /> */}
+          <Route path="/" element={<App />} />
         </Routes>
       </div>
     )

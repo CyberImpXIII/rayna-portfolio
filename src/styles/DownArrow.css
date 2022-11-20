@@ -1,7 +1,13 @@
 .downArrow{
-    transition: transform 0.2s;
+    transition: opacity 1s;
 }
 
 .downArrowContainer{
-    padding: 23px 15px;
+    padding: 15px 15px;
+}
+
+.bottomArrow{
+    position: relative;
+    transform: rotate(-180deg);
+    top: -30px;
 }

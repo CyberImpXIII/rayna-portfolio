@@ -1,6 +1,7 @@
 import { useState } from "react"
 import NavOptionsInterface from "../interfaces/navoptionsinterface"
 import '../styles/Navigation.css'
+import {Link} from 'react-router-dom'
 
 const Nav = ()=>{
   const [navOptions, setNavOptions] = useState<NavOptionsInterface[]>(
@@ -20,7 +21,7 @@ const Nav = ()=>{
     </div>
     <div className='navoptions'>
       {navOptions.map((option)=>(
-        <a href={option.destination}><div style={{backgroundColor:option.color}} className='option title'>{option.title}</div></a>
+        <Link to={option.destination}><div style={{backgroundColor:option.color}} className='option title'>{option.title}</div></Link>
       ))}
     </div>
   </nav>

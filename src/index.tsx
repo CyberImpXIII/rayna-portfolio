@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter,  Routes, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import './styles/index.css';
 import Nav from './components/Nav';
 import reportWebVitals from './reportWebVitals';
@@ -8,6 +8,7 @@ import Header from './components/Header';
 import QuickNav from './components/QuickNav';
 import ContentContainer from './components/ContentContainer';
 import Project from './interfaces/project';
+import { Hash } from 'crypto';
 
 const sanityClient = require('@sanity/client')
 const client = sanityClient({
@@ -31,13 +32,13 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-    <BrowserRouter>
+    <HashRouter basename='/'>
     <link rel="stylesheet" href="https://use.typekit.net/jsp6plk.css"></link>
       <Header/>
       <Nav/>
       <QuickNav/>
       <ContentContainer />
-</BrowserRouter>);
+</HashRouter>);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
