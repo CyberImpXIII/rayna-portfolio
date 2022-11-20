@@ -1,22 +1,21 @@
 {
   "files": {
     "main.css": "/rayna-portfolio/static/css/main.359369cd.css",
-    "main.js": "/rayna-portfolio/static/js/main.8ec167cf.js",
+    "main.js": "/rayna-portfolio/static/js/main.96ad3b8e.js",
     "static/js/787.6d6cbb34.chunk.js": "/rayna-portfolio/static/js/787.6d6cbb34.chunk.js",
     "static/media/LegRoom_Mockup_10-24-22.png": "/rayna-portfolio/static/media/LegRoom_Mockup_10-24-22.b8bac8b94d2633a81128.png",
     "static/media/Symposia WEBSITE MOCKUPS.png": "/rayna-portfolio/static/media/Symposia WEBSITE MOCKUPS.af6d2f60052364c538c0.png",
     "static/media/Symposia WEBSITE MOCKUPS5.png": "/rayna-portfolio/static/media/Symposia WEBSITE MOCKUPS5.a4cc9632e6887c340a4e.png",
     "static/media/ScreenShot1.png": "/rayna-portfolio/static/media/ScreenShot1.72358210377afb0af35a.png",
-    "static/media/Screenshot1.png": "/rayna-portfolio/static/media/Screenshot1.72358210377afb0af35a.png",
-    "static/media/Screenshot4.png": "/rayna-portfolio/static/media/Screenshot4.ffa8956994f52be0fe05.png",
-    "static/media/Screenshot3.png": "/rayna-portfolio/static/media/Screenshot3.573a562ed9ba86851381.png",
-    "static/media/Screenshot5.png": "/rayna-portfolio/static/media/Screenshot5.e97c0e8204a7d0ec577e.png",
+    "static/media/ScreenShot4.png": "/rayna-portfolio/static/media/ScreenShot4.ffa8956994f52be0fe05.png",
+    "static/media/ScreenShot3.png": "/rayna-portfolio/static/media/ScreenShot3.573a562ed9ba86851381.png",
+    "static/media/ScreenShot5.png": "/rayna-portfolio/static/media/ScreenShot5.e97c0e8204a7d0ec577e.png",
     "static/media/Farmshelf-mockups_9-26-21_sales-postcard.png": "/rayna-portfolio/static/media/Farmshelf-mockups_9-26-21_sales-postcard.b631f49c73cd353d6ed4.png",
     "static/media/Farmshelf-mockups_9-26-21_collateral-booklet.png": "/rayna-portfolio/static/media/Farmshelf-mockups_9-26-21_collateral-booklet.8190700b17fa8a87da4c.png",
     "static/media/Farmshelf-mockups_9-26-21_bookmark.png": "/rayna-portfolio/static/media/Farmshelf-mockups_9-26-21_bookmark.1ce7a1e77d599d50a268.png",
     "static/media/4-MCNY mockups_activist-postcard.png": "/rayna-portfolio/static/media/4-MCNY mockups_activist-postcard.c71cefa23cf2f4bcdf28.png",
     "static/media/Fletcher_s-fae-logo-mockup.png": "/rayna-portfolio/static/media/Fletcher_s-fae-logo-mockup.a64f9a67c0e2b9111fbd.png",
-    "static/media/Screenshot2.png": "/rayna-portfolio/static/media/Screenshot2.6a32b9a5fc503f1d470e.png",
+    "static/media/ScreenShot2.png": "/rayna-portfolio/static/media/ScreenShot2.6a32b9a5fc503f1d470e.png",
     "static/media/3-MCNY mockups_germ-city-poster.png": "/rayna-portfolio/static/media/3-MCNY mockups_germ-city-poster.0240dab153410316ba99.png",
     "static/media/5-MCNY mockups_berg-program.png": "/rayna-portfolio/static/media/5-MCNY mockups_berg-program.d0ba18d0c73b202b9906.png",
     "static/media/2-MCNY mockups_germ-city-book.png": "/rayna-portfolio/static/media/2-MCNY mockups_germ-city-book.75ed620c7d047129c097.png",
@@ -28,11 +27,11 @@
     "static/media/Symposia WEBSITE MOCKUPS2.png": "/rayna-portfolio/static/media/Symposia WEBSITE MOCKUPS2.f6039357d2642cdb9d8e.png",
     "index.html": "/rayna-portfolio/index.html",
     "main.359369cd.css.map": "/rayna-portfolio/static/css/main.359369cd.css.map",
-    "main.8ec167cf.js.map": "/rayna-portfolio/static/js/main.8ec167cf.js.map",
+    "main.96ad3b8e.js.map": "/rayna-portfolio/static/js/main.96ad3b8e.js.map",
     "787.6d6cbb34.chunk.js.map": "/rayna-portfolio/static/js/787.6d6cbb34.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.359369cd.css",
-    "static/js/main.8ec167cf.js"
+    "static/js/main.96ad3b8e.js"
   ]
 }
