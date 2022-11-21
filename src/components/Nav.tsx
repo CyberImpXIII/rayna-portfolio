@@ -1,16 +1,20 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import NavOptionsInterface from "../interfaces/navoptionsinterface"
 import '../styles/Navigation.css'
 import {Link} from 'react-router-dom'
 
+
+
 const Nav = ()=>{
+  const [url, setUrl] = useState<String>(document.URL)
   const [navOptions, setNavOptions] = useState<NavOptionsInterface[]>(
-    [{title:'Print', color: '#000000', destination:'print'},
+    [{title:'Print', color: '#CC3FB6', destination:'print'},
     {title:'Digital', color: '#F58514', destination:'digital'},
     {title:'Spaces', color: '#31A00F', destination:'space'},
     {title:'Illustration', color: '#E6BE38', destination:'illustration'},
     {title:'About', color: '#0A70D5', destination:'about'}]
     )
+
   return(
     <nav className='navigation'>
     <div className='navrainbows'>
@@ -21,7 +25,7 @@ const Nav = ()=>{
     </div>
     <div className='navoptions'>
       {navOptions.map((option)=>(
-        <Link to={option.destination}><div style={{backgroundColor:option.color}} className='option title'>{option.title}</div></Link>
+        <Link to={option.destination} onClick={()=>{window.scrollTo(0, 0); setUrl(option.title)}}><div style={url.toLowerCase().includes(option.title.toLocaleLowerCase())?{backgroundColor:'black'}: {backgroundColor:option.color}} className='option title'>{option.title}</div></Link>
       ))}
     </div>
   </nav>

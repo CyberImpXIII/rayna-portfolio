@@ -1,19 +1,24 @@
 import { useState } from "react"
-import { Link } from "react-router-dom";
-import QuickNavOptionInterface from "../interfaces/quicknavoptioninterface"
 import DownArrow from "./DownArrow";
 import '../styles/QuickNav.css'
 
 function QuickNav(){
-    const [currentTitle, setcurrentTitle] = useState<String>('FARMSHELF')
-    const [dropDownActive, setDropDownActive] = useState<Boolean>(false);
-    const [currentDropdown, setCurrentDropdown] = useState<String>('lorem ipsum dolor')
+  interface dropdownData {
+    title: string,
+    content: string,
+    url: string
+} 
+
+  const [currentDropdown, setCurrentDropdown] = useState<dropdownData>({title:'FARMSHELF', content:'loremipsum', url:''});
+  const [dropDownActive, setDropDownActive] = useState<Boolean>(false);
+  const [dropdownList, setDropdownList] = useState<dropdownData[]>([{title:'FARMSHELF', content:'loremipsum', url:''}]);
+    
 
     return(      
     <div className='quicknav' onMouseOver={()=>{setDropDownActive(! dropDownActive)}}>
       <div>
-      <div className='quicknavoption title'>{currentTitle}</div>
-        <div className={ dropDownActive?'quicknavText quicknavTextPaddingActive quicknavTextHeightActive':'quicknavText quicknavTextHeight quicknavTextPadding' } >{currentDropdown}</div>
+      <div className='quicknavoption title'>{currentDropdown.title.toString()}</div>
+        <div className={ dropDownActive?'quicknavText quicknavTextPaddingActive quicknavTextHeightActive':'quicknavText quicknavTextHeight quicknavTextPadding' } >{currentDropdown.content.toString()}</div>
       </div>
     <div className='quicknavbutton'><DownArrow dropDown={dropDownActive}/></div>
   </div>

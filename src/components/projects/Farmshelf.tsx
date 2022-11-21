@@ -1,10 +1,4 @@
 import { useState } from 'react'
-import ImageOne from '../../images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_bookmark.png'
-import ImageTwo from  '../../images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_collateral-booklet.png'
-import ImageThree from  '../../images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_nutrient-instruction-postcard.png'
-import ImageFour from  '../../images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_sales-postcard.png'
-import ImageFive from  '../../images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_sales-postcard.png'
-import ImageSix from  '../../images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_welcome-postcard.png'
 
 const Farmshelf = ()=>{
 
@@ -13,7 +7,12 @@ const Farmshelf = ()=>{
         alt: string
     }    
     
-    const  [print, setPrint] = useState<projectProps[]>([{image:ImageOne, alt:'test'}, {image:ImageTwo, alt:'test'}, {image:ImageThree,  alt:'test'}, {image:ImageFour, alt:'test'}, {image:ImageFive, alt:'test'}, {image:ImageSix, alt:'test'}])
+    const  [print, setPrint] = useState<projectProps[]>([{image:process.env.PUBLIC_URL + '/images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_bookmark.png', alt:'test'}, 
+    {image:process.env.PUBLIC_URL + '/images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_collateral-booklet.png', alt:'test'}, 
+    {image:process.env.PUBLIC_URL + '/images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_nutrient-instruction-postcard.png',  alt:'test'}, 
+    {image:process.env.PUBLIC_URL + '/images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_sales-postcard.png', alt:'test'}, 
+    {image:process.env.PUBLIC_URL + '/images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_sales-postcard.png', alt:'test'}, 
+    {image:process.env.PUBLIC_URL + '/images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_welcome-postcard.png', alt:'test'}])
     return(
         <div>
         {print.map((print)=>{

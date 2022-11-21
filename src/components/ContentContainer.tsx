@@ -11,6 +11,12 @@ import About from "./pages/About"
 import Symposia from './projects/Symposia'
 import Farmshelf from './projects/Farmshelf'
 import MuseumOTCityOfNewYork from "./projects/MuseumOTCityOfNewYork"
+import Corduroy from "./projects/Corduroy"
+import Dollhouse from "./projects/Dollhouse"
+import FletchersFae from "./projects/FletchersFae"
+import Google from "./projects/Google"
+import Kubrick from "./projects/Kubrick"
+import Rebel from "./projects/Rebel"
 
 
 const ContentContainer = ()=>{
@@ -34,6 +40,12 @@ const ContentContainer = ()=>{
           <Route path={`/Symposia`} element={<Symposia />} />
           <Route path={`/Farmshelf`} element={<Farmshelf />} />
           <Route path={`/museumotcny`} element={<MuseumOTCityOfNewYork />} />
+          <Route path={`/corduroy`} element={<Corduroy />} />
+          <Route path={`/dollhouse`} element={<Dollhouse />} />
+          <Route path={`/FletchersFae`} element={<FletchersFae />} />
+          <Route path={`/google`} element={<Google />} />
+          <Route path={`/kubrick`} element={<Kubrick />} />
+          <Route path={`/rebel`} element={<Rebel />} />
           {/* <Route path={`museumotcny`} element={<MuseumOTCityOfNewYork />} /> */}
           <Route path="/" element={<App />} />
         </Routes>

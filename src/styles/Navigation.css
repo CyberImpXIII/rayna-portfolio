@@ -26,6 +26,14 @@
     padding:0px 35px;
     width:min-content;
     text-decoration: none;
+    transition: min-width 0.7s;
+    min-width: 0px;
+    text-align: left!important;
+  }
+
+  .option:hover{
+    min-width:30vw;
+    transition: min-width 0.7s;
   }
   
   .navrainbows{
