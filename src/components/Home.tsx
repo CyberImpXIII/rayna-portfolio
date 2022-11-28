@@ -7,7 +7,7 @@ const App=(props:ContentContainerProps)=>{
   return (
     <div className="App">
       {props.data.pages.map((page)=>(
-        <Page pageName={page.pageName} setActive={props.setActive} images={page.pageImages}/>
+        <Page active={props.active} pageName={page.pageName} setActive={props.setActive} images={page.pageImages}/>
       ))}
     </div>
   );

@@ -12,7 +12,8 @@ interface projectProps {
 interface pageProps{
     images:projectProps[],
     setActive: Function,
-    pageName: string
+    pageName: string,
+    active: string
 }
 
 const Page = (props: pageProps)=>{
@@ -27,6 +28,7 @@ const Page = (props: pageProps)=>{
                         active = i
                     } 
                 }
+                console.log(active)
                 active && props.setActive(props.images[active].link)
         },100)
         return (()=>{clearInterval(interval)})

@@ -19,7 +19,7 @@ const ContentContainer = (props:ContentContainerProps)=>{
         <div className='pageContainer' >
         <Routes>
           {props.data.pages.map((page)=>(
-          <Route path={`/${page.pageName}`} element={<Page pageName={page.pageName} setActive={props.setActive} images={page.pageImages}/>} />
+          <Route path={`/${page.pageName}`} element={<Page active={props.active} pageName={page.pageName} setActive={props.setActive} images={page.pageImages}/>} />
           ))}
           <Route path={`/About`} element={<About />} />
           {/*projects*/}
@@ -33,7 +33,7 @@ const ContentContainer = (props:ContentContainerProps)=>{
           <Route path={`/kubrick`} element={<Kubrick />} />
           <Route path={`/rebel`} element={<Rebel />} />
           {/* <Route path={`museumotcny`} element={<MuseumOTCityOfNewYork />} /> */}
-          <Route path="/" element={<Home data={props.data} setActive={props.setActive}/>} />
+          <Route path="/" element={<Home active={props.active} data={props.data} setActive={props.setActive}/>} />
         </Routes>
       </div>
     )
