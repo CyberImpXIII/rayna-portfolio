@@ -1,12 +1,6 @@
 import { Route, Routes } from "react-router-dom"
-// import { useState } from "react"
 import "../styles/Project.css"
-import App from './App'
-// import QuickNavOptionInterface from "../interfaces/quicknavoptioninterface"
-import Print from "./pages/Print"
-import Digital from "./pages/Digital"
-import Spaces from "./pages/Spaces"
-import Illustration from "./pages/Illustration"
+import Home from './Home'
 import About from "./pages/About"
 import Symposia from './projects/Symposia'
 import Farmshelf from './projects/Farmshelf'
@@ -17,24 +11,16 @@ import FletchersFae from "./projects/FletchersFae"
 import Google from "./projects/Google"
 import Kubrick from "./projects/Kubrick"
 import Rebel from "./projects/Rebel"
+import Page from './pages/Page'
+import ContentContainerProps from "../interfaces/ContentContainerProps"
 
-
-const ContentContainer = ()=>{
-    // const [routes, setRoutes] = useState<QuickNavOptionInterface[]>([
-    //     {title:'FARMSHELF', img:'test',  destination:'./farmshelf'},
-    //     {title:'MCNY',  img:'test',destination:'./mcny'},
-    //     {title:'FLETCHER\'S FAE',  img:'test',destination:'./fletchersfae'},
-    //     {title:'GOOGLE CAMBRIDGE',  img:'test',destination:'./googlecambridge'},
-    //     {title:'SYMPOSIA',  img:'test', destination:'./symposia'},
-    // ]);
-    
+const ContentContainer = (props:ContentContainerProps)=>{
     return(
         <div className='pageContainer' >
         <Routes>
-          <Route path={`/print`} element={<Print />} />
-          <Route path={`/digital`} element={<Digital />} />
-          <Route path={`/space`} element={<Spaces />} />
-          <Route path={`/Illustration`} element={<Illustration />} />
+          {props.data.pages.map((page)=>(
+          <Route path={`/${page.pageName}`} element={<Page pageName={page.pageName} setActive={props.setActive} images={page.pageImages}/>} />
+          ))}
           <Route path={`/About`} element={<About />} />
           {/*projects*/}
           <Route path={`/Symposia`} element={<Symposia />} />
@@ -47,7 +33,7 @@ const ContentContainer = ()=>{
           <Route path={`/kubrick`} element={<Kubrick />} />
           <Route path={`/rebel`} element={<Rebel />} />
           {/* <Route path={`museumotcny`} element={<MuseumOTCityOfNewYork />} /> */}
-          <Route path="/" element={<App />} />
+          <Route path="/" element={<Home data={props.data} setActive={props.setActive}/>} />
         </Routes>
       </div>
     )

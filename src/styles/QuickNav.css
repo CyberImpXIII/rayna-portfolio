@@ -19,12 +19,12 @@
   .quicknavTextPadding{
     padding:0px 25px;
     transition-property: padding;
-    transition-duration:1s;
+    transition-duration:.5s;
   }
 
   .quicknavTextHeightActive{
     max-height:100vh;
-    transition: max-height 1s;
+    transition: max-height .5s;
     height:auto;
   }
 
@@ -36,7 +36,6 @@
   
   .quicknavoption{
     box-sizing: border-box;
-    border:1px solid white;
     width:560px;
     height:100px;
     background-color:black;

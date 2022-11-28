@@ -1,0 +1,18 @@
+.aboutMe{
+    display: flex;
+}
+
+.fifty{
+    width:50%;
+    padding-top:130px;
+}
+
+.left{
+    padding-left: 80px;
+    padding-right: 40px;
+}
+
+.right{
+    padding-right: 80px;
+    padding-left: 40px;
+}

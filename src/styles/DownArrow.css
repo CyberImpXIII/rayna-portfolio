@@ -1,5 +1,5 @@
 .downArrow{
-    transition: opacity 1s;
+    transition: opacity .5s;
 }
 
 .downArrowContainer{
