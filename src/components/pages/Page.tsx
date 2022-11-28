@@ -20,15 +20,15 @@ const Page = (props: pageProps)=>{
    
     useEffect(()=>{
         let interval = setInterval(()=>{
-            let active:(string | undefined) = 'unset'
+            let active:(number | undefined) = undefined
                 for(let i = 0; i <  Number(ref.current?.children.length); i++){
                     let rect = ref.current?.children[i].children[0].getBoundingClientRect()
                     if(rect && rect?.top < window.innerHeight && rect?.top + 150 < window.innerHeight){
-                        active = i.toString()
+                        active = i
                     } 
                 }
-                console.log(active)
-        },500)
+                active && props.setActive(props.images[active].link)
+        },100)
         return (()=>{clearInterval(interval)})
     },[])
 

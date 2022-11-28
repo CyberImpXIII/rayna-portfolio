@@ -67,38 +67,43 @@ const defaultData = {
     ],
     navItems:[
       {
-        navItemName:'symposia',
+        navItemName:'Symposia',
         navItemPageContent:`Hotel identity exploration, 2021
         See more →
         `,
         navItemProjectContent:`Hotel identity for SVA Continuing Education with Anita Zeppetelli
         2021
-        `
+        `,
+        navItemLink:'symposia'
       },{
-        navItemName:'farmshelf',
+        navItemName:'Farmshelf',
         navItemPageContent:`Senior Graphic Designer, 2019-2020
         See more →        
         `,
         navItemProjectContent:`I was responsible for all the visual style, design and photography at Farmshelf. I evolved the design system to create consistency, increase brand awareness and accommodate growth.
-        `
+        `,
+        navItemLink:'farmshelf'
       },{
         navItemName:'Museum of the City of New York',
         navItemPageContent:`Graphic Designer, xxxdate
         See more →           
         `,
-        navItemProjectContent:`XXXXX`
+        navItemProjectContent:`XXXXX`,
+        navItemLink:''
       },{
         navItemName:'Fletcher’s Fae',
         navItemPageContent:`Identity and packaging, xxxdate
         See more →             
         `,
         navItemProjectContent:`Identity, illustration, and packaging for independent distiller
-        2021?`
+        2021?`,
+        navItemLink:''
       },{
         navItemName:'Leg Room',
         navItemPageContent:`Illustration and poster design for short film titled Leg Room, 2022            
         `,
-        navItemProjectContent:``
+        navItemProjectContent:``,
+        navItemLink:''
       }
     ]
   }
