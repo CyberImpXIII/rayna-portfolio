@@ -21,7 +21,7 @@ const App=()=>{
   const [url, setUrl] = useState<string>(document.URL)
 
   useEffect(()=>{
-
+    
   },[active])
   return (
     <div className="App">
