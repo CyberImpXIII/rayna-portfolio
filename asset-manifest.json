@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/rayna-portfolio/static/css/main.3e2823f6.css",
-    "main.js": "/rayna-portfolio/static/js/main.cde94685.js",
+    "main.css": "/rayna-portfolio/static/css/main.4b70845e.css",
+    "main.js": "/rayna-portfolio/static/js/main.52bc9b16.js",
     "static/js/787.6d6cbb34.chunk.js": "/rayna-portfolio/static/js/787.6d6cbb34.chunk.js",
     "index.html": "/rayna-portfolio/index.html",
-    "main.3e2823f6.css.map": "/rayna-portfolio/static/css/main.3e2823f6.css.map",
-    "main.cde94685.js.map": "/rayna-portfolio/static/js/main.cde94685.js.map",
+    "main.4b70845e.css.map": "/rayna-portfolio/static/css/main.4b70845e.css.map",
+    "main.52bc9b16.js.map": "/rayna-portfolio/static/js/main.52bc9b16.js.map",
     "787.6d6cbb34.chunk.js.map": "/rayna-portfolio/static/js/787.6d6cbb34.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e2823f6.css",
-    "static/js/main.cde94685.js"
+    "static/css/main.4b70845e.css",
+    "static/js/main.52bc9b16.js"
   ]
 }
