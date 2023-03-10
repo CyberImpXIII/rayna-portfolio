@@ -2,5 +2,6 @@ export default interface navItem {
     navItemName:string,
     navItemPageContent:string,
     navItemProjectContent:string,
-    navItemLink:string
+    navItemLink:string,
+    project?:string
   }

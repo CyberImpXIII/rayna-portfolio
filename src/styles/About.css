@@ -1,18 +1,20 @@
 .aboutMe{
-    display: flex;
+
+    width: 40%;
+    font-family: "eskapade",serif;
+    line-height: 27px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.fifty{
-    width:50%;
-    padding-top:130px;
+.aboutActive{
+    background-color: var(--cream);
 }
-
-.left{
-    padding-left: 80px;
-    padding-right: 40px;
-}
-
-.right{
-    padding-right: 80px;
-    padding-left: 40px;
+@media screen and (max-width: 900px)  {
+    .aboutMe{
+        width: 70%;
+    }
 }

@@ -27,7 +27,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "watch": "nodemon --exec \"npm run deploy \" -e tsx --ignore build/"
+    "watch": "nodemon --exec \"npm run deploy \" -e tsx -e css --ignore build/"
   },
   "eslintConfig": {
     "extends": [

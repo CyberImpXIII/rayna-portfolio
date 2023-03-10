@@ -1,39 +1,41 @@
 import { Route, Routes } from "react-router-dom"
 import "../styles/Project.css"
-import Home from './Home'
 import About from "./pages/About"
-import Symposia from './projects/Symposia'
-import Farmshelf from './projects/Farmshelf'
-import MuseumOTCityOfNewYork from "./projects/MuseumOTCityOfNewYork"
-import Corduroy from "./projects/Corduroy"
-import Dollhouse from "./projects/Dollhouse"
-import FletchersFae from "./projects/FletchersFae"
-import Google from "./projects/Google"
-import Kubrick from "./projects/Kubrick"
-import Rebel from "./projects/Rebel"
 import Page from './pages/Page'
 import ContentContainerProps from "../interfaces/ContentContainerProps"
+import { useState, useEffect } from "react"
+import PageImageProps from '../interfaces/pageImageProps'
+import Project from "./pages/Project"
 
-const ContentContainer = (props:ContentContainerProps)=>{
+const ContentContainer = ({data, aboutActive, active, setActive}:ContentContainerProps)=>{
+  let [images, setImages] = useState<PageImageProps[]>([
+    {image: 'string',
+    link: 'string',
+    alt: 'string',
+    project:'string'}
+  ])
+  
+  useEffect(()=>{
+    let imagestemp:PageImageProps[] = [...data.pages[0].pageImages]
+    for (let i = 1; i < data.pages.length; i++){
+      console.log(data.pages[i].pageImages)
+      imagestemp = imagestemp.concat(data.pages[i].pageImages)
+    }
+    console.log(imagestemp, 'test')
+    setImages(imagestemp);
+  },[data.pages])
     return(
-        <div className='pageContainer' >
+        <div className={`pageContainer ${aboutActive && 'aboutActive'}`} >
         <Routes>
-          {props.data.pages.map((page)=>(
-          <Route path={`/${page.pageName}`} element={<Page active={props.active} pageName={page.pageName} setActive={props.setActive} images={page.pageImages}/>} />
+          {data.pages.map(({pageName, pageImages})=>(
+          <Route key={`${pageName}pageContainerRoute`} path={`/${pageName}`} element={<Page active={active} pageName={pageName} setActive={setActive} images={pageImages}/>} />
           ))}
+          {data.projects.map(({projectName, projectLink, projectImages})=>(
+            <Route key={`${projectName}projectContainerRoute`} path={projectLink} element={<Project projectImages={projectImages} />} />
+          )
+          )}
           <Route path={`/About`} element={<About />} />
-          {/*projects*/}
-          <Route path={`/Symposia`} element={<Symposia />} />
-          <Route path={`/Farmshelf`} element={<Farmshelf />} />
-          <Route path={`/museumotcny`} element={<MuseumOTCityOfNewYork />} />
-          <Route path={`/corduroy`} element={<Corduroy />} />
-          <Route path={`/dollhouse`} element={<Dollhouse />} />
-          <Route path={`/FletchersFae`} element={<FletchersFae />} />
-          <Route path={`/google`} element={<Google />} />
-          <Route path={`/kubrick`} element={<Kubrick />} />
-          <Route path={`/rebel`} element={<Rebel />} />
-          {/* <Route path={`museumotcny`} element={<MuseumOTCityOfNewYork />} /> */}
-          <Route path="/" element={<Home active={props.active} data={props.data} setActive={props.setActive}/>} />
+          <Route path="/" element={<Page active={active} pageName={'/'} setActive={setActive} images={images} />} />
         </Routes>
       </div>
     )

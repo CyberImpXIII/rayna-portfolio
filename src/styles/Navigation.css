@@ -1,7 +1,9 @@
 
+
+
 .navigation{
     position:fixed;
-    top:100px;
+    top:85px;
     width:240px;
     z-index:1;
     transition: width 1s;
@@ -13,26 +15,27 @@
 
   .navoptions{
     position:absolute;
-    top:100px;
-    left:80px;
+    top:85px;
+    left:70px;
   }
   
-  .navoptions a{
+  .navoptions a{ 
     text-decoration: none;
   }
   
   .option{
-    height:100px;
-    padding:0px 35px;
+    padding:5px 20px 0px 20px;
+    height: 80px;
     width:min-content;
     text-decoration: none;
     transition: all 0.4s;
-    min-width: 0px;
+    min-width: 155px;
     text-align: left!important;
   }
 
   .option:hover{
-    padding-left: calc(30vw - 35px);
+    padding-left: calc(100%);
+    text-align: right!important;
     transition: all 0.4s;
   }
   
@@ -43,19 +46,58 @@
   }
   
   .leftnavrainbow{
-    width:80px;
-    height:calc(100vh - 100px);
-    background-image:repeating-linear-gradient(to bottom, #0A70D5 0px, #0A70D5 99px, #5FD53B 100px, #5FD53B 199px, #52A9FF 200px, #52A9FF 299px, #F7A0E9 300px, #F7A0E9 399px, #CC3FB6 400px, #CC3FB6 499px, #F58514 500px, #F58514 599px, #31A00F 600px, #31A00F 699px, #E6BE38 700px, #E6BE38 799px)
+    width:70px;
+    height:calc(100vh - 65px);
+    background-image:repeating-linear-gradient(to bottom, #0A70D5 0px, #0A70D5 84px, #5FD53B 85px, #5FD53B 169px, #52A9FF 170px, #52A9FF 254px, #F7A0E9 255px, #F7A0E9 339px, #CC3FB6 340px, #CC3FB6 424px, #F58514 425px, #F58514 509px, #31A00F 510px, #31A00F 594px, #E6BE38 595px, #E6BE38 679px)
   }
   
   .rightnavrainbow{
-    width:160px;
-    height:calc(100vh - 100px);
-    background-image:repeating-linear-gradient(to bottom, #F7A0E9 0px, #F7A0E9 99px, #CC3FB6 100px, #CC3FB6 199px, #F58514 200px, #F58514 299px, #31A00F 300px, #31A00F 399px, #E6BE38 400px, #E6BE38 499px, #0A70D5 500px, #0A70D5 599px, #5FD53B 600px, #5FD53B 699px, #52A9FF 700px, #52A9FF 799px)
+    width:110px;
+    height:calc(100vh - 85px);
+    background-image:repeating-linear-gradient(to bottom, #F7A0E9 0px, #F7A0E9 84px, #CC3FB6 85px, #CC3FB6 169px, #F58514 170px, #F58514 254px, #31A00F 255px, #31A00F 339px, #E6BE38 340px, #E6BE38 424px, #0A70D5 425px, #0A70D5 509px, #5FD53B 510px, #5FD53B 594px, #52A9FF 595px, #52A9FF 679px)
   }
 
-  @media screen and (max-width: 1024px)  {
+  @media screen and (max-width: 900px)  {
     .navigation{
+      top:0px;
+      width:100%;
+      z-index:1;
+      transition:top .3s;
+    }
+
+    .navigation:hover{
+      width:100%;
+    }
+    .navoptions{
+      width:100%;
+      top:13vw;
+      left:0px;
+    }
+
+    .navoptions{
+      width:100%;
+      top: calc((70vw)*-1);
+      transition:top .3s;
+    }
+
+    .option{
+      padding: 5px 0px 0px 0px;
+      width:100%;
+      height:13vw;
+      text-align: center!important;
+      background-color: antiquewhite!important;
+      color:black;
+    }
+
+    .mobileNavActive{
+      transition:top .3s;
+      top:13vw!important;
+    }
+
+    .option:hover{
+      padding-left: 15px;
+    }
+    .navrainbows{
       display:none;
     }
     .quicknav{
