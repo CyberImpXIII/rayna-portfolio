@@ -28,12 +28,7 @@ const Nav = ({noDropDown, setNoDropDown, aboutActive, setAboutActive, url, setUr
     {title:'Illustration', color: '#E6BE38', destination:'illustration'},
     {title:'About', color: '#0A70D5', destination:'about'}]
 
-    function replaceWithBr(input:string) {
-      return input.replace(/\n/g, "<br />")
-    }
-
     const navHandler = (option:Option, aboutActive:boolean, setAboutActive:Function)=>{
-      window.scrollTo(0, 0); 
       setUrl(option.title); 
       setMobileNavActive(false);
       if(option.title === 'About' || option.title === 'Illustration'){
@@ -70,7 +65,8 @@ const Nav = ({noDropDown, setNoDropDown, aboutActive, setAboutActive, url, setUr
     <div className={`navoptions ${mobileNavActive && 'mobileNavActive'}`}>
       {navOptions.map((option)=>(
         <Link key={`${option.title}NavOption`} to={option.destination} onClick={()=>{navHandler(option, aboutActive, setAboutActive)}}>
-          <div dangerouslySetInnerHTML={{__html: replaceWithBr(option.title)}} style={url.toLowerCase().includes(option.title.toLocaleLowerCase())?{backgroundColor:'black'}: {backgroundColor:option.color}} className='option title'>
+          <div style={url.toLowerCase().includes(option.title.toLocaleLowerCase())?{backgroundColor:'black'}: {backgroundColor:option.color}} className='option title'>
+          {option.title}
           </div>
         </Link>
       ))}

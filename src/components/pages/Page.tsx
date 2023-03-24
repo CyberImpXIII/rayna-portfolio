@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 import '../../styles/Project.css'
+import DropDown from '../DropDown'
 
 interface projectProps {
     image: string,
@@ -14,20 +15,25 @@ interface pageProps{
     images:projectProps[],
     setActive: Function,
     pageName: string,
-    active: string
+    active: string,
+    noDropDown?:boolean,
+    title?:string,
+    content?:string,
+    link?:string
 }
 
-const Page = ({images, setActive, pageName, active}: pageProps)=>{
+const Page = ({noDropDown, title, link, content, images, setActive, pageName, active}: pageProps)=>{
     const ref = useRef<HTMLDivElement>(null)
    
     useEffect(()=>{
         let interval = setInterval(()=>{
-            let active:(number | undefined) = undefined
+            let active:(number | undefined) = undefined  
                 for(let i = 0; i <  Number(ref.current?.children.length); i++){
                     let rect = ref.current?.children[i].children[0].getBoundingClientRect()
-                    console.log(ref.current);
+                    console.log(i, rect && rect?.top < window.innerHeight, rect?.top, window.innerHeight )
                     if(rect && rect?.top < window.innerHeight && rect?.top + 150 < window.innerHeight){
-                        active = i
+                        active = i - 1
+                        // -1 accounts for the nav dropdown now being inside this element
                     } 
                 }
                 if(typeof active=='number'){ 
@@ -39,6 +45,7 @@ const Page = ({images, setActive, pageName, active}: pageProps)=>{
 
     return(
         <div ref={ref} key={`${pageName}ref`}>
+        <DropDown noDropDown={noDropDown} title={title} content={content} link={link}/>
         {images.map((image, i)=>{
             return(<>
                 {image.image.includes('.mp4') ?
@@ -47,7 +54,7 @@ const Page = ({images, setActive, pageName, active}: pageProps)=>{
                         Your browser does not support HTML5 video.
                     </video>
                     </a>:
-                    <Link key={`${pageName}${i}${image.alt}`} to={`/${image.link}`}>
+                    <Link key={`${pageName}${i}${image.alt}`} to={image.link !== '' ? `/${image.link}` : ''}>
                     <img data-project={image.project} key={`${pageName}${i}${image.alt}image`} src={image.image} alt={image.alt} className='projectImage'/>
                     </Link>}
                 </>

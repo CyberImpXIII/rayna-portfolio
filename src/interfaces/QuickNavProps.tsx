@@ -1,7 +1,7 @@
 interface quickNavProps {
-    title: string,
-    content: string,
-    url?: string,
+    title?: string,
+    content?: string,
+    link?: string,
     project?: string,
     noDropDown?:boolean
   } 

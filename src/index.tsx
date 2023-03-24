@@ -1,9 +1,9 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HashRouter } from "react-router-dom";
 import './styles/index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './components/App';
+import ScrollToTop from './components/ScrolltoTop';
 
 
 const root = ReactDOM.createRoot(
@@ -11,6 +11,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <HashRouter basename='/'>
+      <ScrollToTop />
       <App />
     </HashRouter>
 );

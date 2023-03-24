@@ -1,0 +1,14 @@
+.mobileMenu{
+    display: none;
+    width: 9vw;
+    fill: white;
+    top: 1.6vw;
+    position: absolute;
+    right: 1.5vw;
+}
+
+@media screen and (max-width:900px) {
+    .mobileMenu{
+        display:block;
+    }
+}

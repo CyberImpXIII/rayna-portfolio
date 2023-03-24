@@ -5,6 +5,7 @@ import projectImage from "./ProjectImage"
 interface project{
     projectName:string,
     projectLink:string,
+    dropdownContent:string,
     projectImages:projectImage[]
 }
 

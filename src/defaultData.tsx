@@ -9,39 +9,17 @@ const defaultData = {
         pageName:'print'
       },
       {
-        pageImages:[{image:process.env.PUBLIC_URL + '/videos/2-Digital/farmshelfwebsitemockup2.mp4', link:'farmshelf',project:'farmshelf', alt:'farmshelf'}, 
-        {image:process.env.PUBLIC_URL + '/videos/2-Digital/WhatIsFarmshelf_IG_final.mp4', link:'farmshelf',project:'farmshelf', alt:'farmshelf'}],
+        pageImages:[{image:process.env.PUBLIC_URL + '/videos/2-Digital/farmshelfwebsitemockup2.mp4', link:'farmshelf',project:'website-mockup', alt:'farmshelf'}, 
+        {image:process.env.PUBLIC_URL + '/videos/2-Digital/WhatIsFarmshelf_IG_final.mp4', link:'farmshelf', project:'farmshelf2', alt:'farmshelf'}],
         pageName:'digital'
       },{
         pageImages:[
           {image:process.env.PUBLIC_URL + '/images/3-Spaces/Corduroy/ScreenShot1.png', link:'corduroy',project:'corduroy', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Corduroy/ScreenShot2.png', link:'corduroy',project:'corduroy', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Corduroy/ScreenShot3.png', link:'corduroy',project:'corduroy', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Corduroy/ScreenShot4.png', link:'corduroy',project:'corduroy', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Corduroy/ScreenShot5.png', link:'corduroy',project:'corduroy', alt:'test'},
           {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7773.jpg', link:'google',project:'google', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7793.jpg', link:'google',project:'google', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7799.jpg', link:'google',project:'google', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7837-Edit.jpg', link:'google',project:'google', alt:'test'},
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7855.jpg', link:'google',project:'google', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7860.jpg', link:'google',project:'google', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7884-Edit.jpg', link:'google',project:'google', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7886.jpg', link:'google',project:'google', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7887-Edit.jpg', link:'google',project:'google', alt:'test'}, 
           {image:process.env.PUBLIC_URL + '/images/3-Spaces/Pernod Ricard/_DSC4716.jpg', link:'pernod',project:'pernod', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Pernod Ricard/_DSC4726.jpg', link:'pernod',project:'pernod', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Pernod Ricard/IMG_8243.jpg', link:'pernod',project:'pernod', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Pernod Ricard/IMG_8250.jpg', link:'pernod',project:'pernod', alt:'test'}, 
           {image:process.env.PUBLIC_URL + '/images/3-Spaces/Rebel Women_ Defying Victorianism/IMG_7460.jpeg', link:'rebel',project:'rebel', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Rebel Women_ Defying Victorianism/IMG_7466.jpeg', link:'rebel',project:'rebel', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Rebel Women_ Defying Victorianism/IMG_7469.jpeg', link:'rebel',project:'rebel', alt:'test'}, 
           {image:process.env.PUBLIC_URL + '/images/3-Spaces/Stettheimer Dollhouse/BLF-2020-1119-MCNY-StettheimerDollhouse-027.jpg', link:'stettheimer',project:'stettheimer', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Stettheimer Dollhouse/BLF-2020-1119-MCNY-StettheimerDollhouse-034.jpg', link:'stettheimer',project:'stettheimer', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Stettheimer Dollhouse/BLF-2020-1119-MCNY-StettheimerDollhouse-048.jpg', link:'stettheimer',project:'stettheimer', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Stettheimer Dollhouse/BLF-2020-1119-MCNY-StettheimerDollhouse-059.jpg', link:'stettheimer',project:'stettheimer', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Stettheimer Dollhouse/BLF-2020-1119-MCNY-StettheimerDollhouse-135.jpg', link:'stettheimer',project:'stettheimer', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Through a Different Lens_ Stanley Kubrick/Screen Shot 2019-03-11 at 5.25.53 PM.png', link:'kubrick',project:'kubrick', alt:'test'}, 
-          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Through a Different Lens_ Stanley Kubrick/Screen Shot 2019-03-11 at 5.26.33 PM.png', link:'kubrick',project:'kubrick', alt:'test'}],
+          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Through a Different Lens_ Stanley Kubrick/Screen Shot 2019-03-11 at 5.25.53 PM.png', link:'kubrick',project:'kubrick', alt:'test'}],
           pageName:'space'
       },{
         pageImages:[
@@ -69,39 +47,43 @@ const defaultData = {
       {
         navItemName:'Symposia',
         navItemPageContent:`Hotel identity exploration, 2021
-        See more →
-        `,
-        navItemProjectContent:`Hotel identity for SVA Continuing Education with Anita Zeppetelli
-        2021
+        <a href='/symposia'>See more →</a>
         `,
         navItemLink:'symposia',
         project:'symposia'
       },{
         navItemName:'Farmshelf',
         navItemPageContent:`Senior Graphic Designer, 2019-2020
-        See more →        
-        `,
-        navItemProjectContent:`I was responsible for all the visual style, design and photography at Farmshelf. I evolved the design system to create consistency, increase brand awareness and accommodate growth.
+        <a href='/farmshelf'>See more →</a>        
         `,
         navItemLink:'farmshelf',
         project:'farmshelf'
       },{
-        navItemName:'Museum of the \n City of New York',
-        navItemPageContent:`Graphic Designer, xxxdate
-        See more →           
+        navItemName:'Farmshelf',
+        navItemPageContent:`Conceptualized and edited a video for marketing of new product.
+        2020               
         `,
-        navItemProjectContent:`Created original work for marketing, exhibitions, wayfinding, and online shop.
-        2017-2018
+        navItemLink:'farmshelf',
+        project:'farmshelf2'
+      },{
+        navItemName:'Farmshelf Website',
+        navItemPageContent:`Designed, produced and launched website for food-tech startup.
+        2020                      
+        `,
+        navItemLink:'farmshelf',
+        project:'website-mockup'
+      },{
+        navItemName:`Museum of the 
+        City of New York`,
+        navItemPageContent:`Graphic Designer, 2017-2018
+        <a href='/museumotcny'>See more →</a>           
         `,
         navItemLink:'museumotcny',
         project:'museumotcny'
       },{
         navItemName:'Fletcher’s Fae',
-        navItemPageContent:`Identity and packaging, xxxdate
-        See more →             
-        `,
-        navItemProjectContent:`Identity, illustration, and packaging for independent distiller.
-        2020
+        navItemPageContent:`Identity and packaging, 2020
+        <a href='/fletchersfae'>See more →</a>             
         `,
         navItemLink:'fletchersfae',
         project:'fletchersfae'
@@ -109,28 +91,20 @@ const defaultData = {
         navItemName:'Leg Room',
         navItemPageContent:`Illustration and poster design for short film titled Leg Room. 2022           
         `,
-        navItemProjectContent:``,
-        navItemLink:'legroom',
+        navItemLink:'',
         project:'legroom'
       },{
         navItemName:'A City for Corduroy',
         navItemPageContent:`Exhibition design, 2018
-        See more →
+        <a href='/corduroy'>See more →</a>
         `,
-        navItemProjectContent:`This exhibition of Don Freeman’s work featured drawings, paintings, publications, and prints, as well as the artist’s original studies and sketches of Corduroy and other characters. I created the main environmental graphics, provided illustrations, and assisted exhibition design under Design Director Marissa Martonyi.
 
-        Photographs courtesy of Brad Farwell
-        2018
-        `,
         navItemLink:'corduroy',
         project:'corduroy'
       },{
         navItemName:'Google Austin',
         navItemPageContent:`Environmental design, 2019
-        See more →
-        `,
-        navItemProjectContent:`I designed a floor of Google’s corporate offices in Austin, Texas, while working at GHD Partners. The space is themed in retrofuturism, looking back at stories of imagining the future through design, architecture, and scientific exploration.
-        2019
+        <a href='/google'>See more →</a>
         `,
         navItemLink:'google',
         project:'google'
@@ -138,11 +112,7 @@ const defaultData = {
         navItemName:'Rebel Women: Defying Victorianism',
         navItemPageContent:`Dropdown on spaces page:
         Exhibition design, 2018
-        See more →        
-        `,
-        navItemProjectContent:`This exhibition focused on the untold stories of the city’s independent, unconventional, and path-breaking women who had an indelible impact on New York’s society, culture, and economy by the turn of the 20th century. I worked with Design Director Marissa Martonyi at Museum of the City of New York.
-        2018
-        
+        <a href='/rebel'>See more →</a>        
         `,
         navItemLink:'rebel',
         project:'rebel'
@@ -150,33 +120,21 @@ const defaultData = {
         navItemName:'Stettheimer Dollhouse',
         navItemPageContent:`
         Illustration, 2020
-        See more →
-        `,
-        navItemProjectContent:`The Stettheimer “doll’s house” – an artistic model made over the course of nearly two decades between 1916 and 1935 – is one of the great treasures of the Museum of the City of New York. I provided illustrations for the museum’s exhibition featuring the doll’s house, working with Design Director Marissa Martonyi.
-        2020
+        <a href='/stettheimer'>See more →</a>
         `,
         navItemLink:'stettheimer',
         project:'stettheimer'
       },{
         navItemName:'Through a Different Lens',
         navItemPageContent:`Exhibition design, MCNY, 2018
-        See more →
-        `,
-        navItemProjectContent:`Through a Different Lens: Stanley Kubrick Photographs features more than 120 photographs by Kubrick from the Museum’s Look Magazine archive. I worked with Design Director Marissa Martonyi at Museum of the City of New York.
-        Photos courtesy of Brad Farwell.
-        Hyperallergic review
-        2018        
+        <a href='/kubrick'>See more →</a>
         `,
         navItemLink:'kubrick',
         project:'kubrick'
       },{
         navItemName:'Pernod Ricard',
-        navItemPageContent:`Dropdown on spaces page:
-        Environmental design, 2019
-        See more →        
-        `,
-        navItemProjectContent:`I designed wall graphics for Pernod Ricard, a global leader in wine and spirits, while working at GHD Partners. The Impress space, in their New York corporate office, features art-deco inspired vinyl graphics. 
-        2019            
+        navItemPageContent:`Environmental design, 2019
+        <a href='/pernod'>See more →</a>        
         `,
         navItemLink:'pernod',
         project:'pernod'
@@ -185,7 +143,12 @@ const defaultData = {
     projects:[
       {
         projectName:'Corderoy',
-        projectLink:'/corderoy',
+        projectLink:'/corduroy',
+        dropdownContent:`This exhibition of Don Freeman’s work featured drawings, paintings, publications, and prints, as well as the artist’s original studies and sketches of Corduroy and other characters. I created the main environmental graphics, provided illustrations, and assisted exhibition design under Design Director Marissa Martonyi.
+
+        Photographs courtesy of Brad Farwell
+        2018
+        `,
         projectImages:[{image:process.env.PUBLIC_URL + '/images/3-Spaces/Corduroy/ScreenShot1.png', alt:'test'}, 
         {image:process.env.PUBLIC_URL + '/images/3-Spaces/Corduroy/ScreenShot2.png', alt:'test'}, 
         {image:process.env.PUBLIC_URL + '/images/3-Spaces/Corduroy/ScreenShot3.png', alt:'test'}, 
@@ -194,6 +157,8 @@ const defaultData = {
       },{
         projectName:'Farmshelf',
         projectLink:'/Farmshelf',
+        dropdownContent:`I was responsible for all the visual style, design and photography at Farmshelf. I evolved the design system to create consistency, increase brand awareness and accommodate growth.
+        `,
         projectImages:[{image:process.env.PUBLIC_URL + '/images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_bookmark.png', alt:'test'}, 
         {image:process.env.PUBLIC_URL + '/images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_collateral-booklet.png', alt:'test'}, 
         {image:process.env.PUBLIC_URL + '/images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_nutrient-instruction-postcard.png',  alt:'test'}, 
@@ -204,6 +169,9 @@ const defaultData = {
       {
         projectName:'Symposia',
         projectLink:'/symposia',
+        dropdownContent:`Hotel identity for SVA Continuing Education with Anita Zeppetelli
+        2021
+        `,
         projectImages:[{image:process.env.PUBLIC_URL + '/images/1-Print/1- Symposia/Symposia WEBSITE MOCKUPS.png', alt:'test'}, 
         {image:process.env.PUBLIC_URL + '/images/1-Print/1- Symposia/Symposia WEBSITE MOCKUPS2.png', alt:'test'}, 
         {image:process.env.PUBLIC_URL + '/images/1-Print/1- Symposia/Symposia WEBSITE MOCKUPS3.png',  alt:'test'}, 
@@ -213,6 +181,9 @@ const defaultData = {
       {
         projectName:'Museum of the City of New York',
         projectLink:'/museumotcny',
+        dropdownContent:`Created original work for marketing, exhibitions, wayfinding, and online shop.
+        2017-2018
+        `,
         projectImages:[
           {image:process.env.PUBLIC_URL + '/images/1-Print/3-Museum of the City of New York/1-MCNY mockups_uptown-bounce.png', alt:'test'}, 
           {image:process.env.PUBLIC_URL + '/images/1-Print/3-Museum of the City of New York/2-MCNY mockups_germ-city-book.png', alt:'test'}, 
@@ -224,35 +195,49 @@ const defaultData = {
       {
         projectName:'Fletcher\'s Fae',
         projectLink:'/FletchersFae',
+        dropdownContent:`Identity, illustration, and packaging for independent distiller.
+        2020
+        `,
         projectImages:[
           {image:process.env.PUBLIC_URL + '/images/1-Print/5-Fletcher_s Fae/Fletcher_s-fae-logo-mockup.png', alt:'test'},
           {image:process.env.PUBLIC_URL + '/images/1-Print/5-Fletcher_s Fae/Fletchers-Fae-Bottle-Mockup-CLOSEUP.jpg', alt:'test'},
           {image:process.env.PUBLIC_URL + '/images/1-Print/5-Fletcher_s Fae/Fletchers-Fae-Bottle-Mockup.png', alt:'test'}
           
         ]
-    },
-    {
-      projectName:'Through Different Lense',
-      projectLink:'/kubrick',
-      projectImages:[
-        {image:process.env.PUBLIC_URL + '/images/3-Spaces/Through a Different Lens_ Stanley Kubrick/Screen Shot 2019-03-11 at 5.25.53 PM.png', alt:'test'},
-        {image:process.env.PUBLIC_URL + '/images/3-Spaces/Through a Different Lens_ Stanley Kubrick/Screen Shot 2019-03-11 at 5.26.33 PM.png', alt:'test'}        
-      ]
-    },
-    {
-      projectName:'Stettheimer Dollhouse',
-      projectLink:'/stettheimer',
-      projectImages:[
-        {image:process.env.PUBLIC_URL + '/images/3-Spaces/Stettheimer Dollhouse/BLF-2020-1119-MCNY-StettheimerDollhouse-027.jpg', alt:'test'},
-        {image:process.env.PUBLIC_URL + '/images/3-Spaces/Stettheimer Dollhouse/BLF-2020-1119-MCNY-StettheimerDollhouse-034.jpg', alt:'test'},
-        {image:process.env.PUBLIC_URL + '/images/3-Spaces/Stettheimer Dollhouse/BLF-2020-1119-MCNY-StettheimerDollhouse-048.jpg', alt:'test'}, 
-        {image:process.env.PUBLIC_URL + '/images/3-Spaces/Stettheimer Dollhouse/BLF-2020-1119-MCNY-StettheimerDollhouse-059.jpg', alt:'test'},
-        {image:process.env.PUBLIC_URL + '/images/3-Spaces/Stettheimer Dollhouse/BLF-2020-1119-MCNY-StettheimerDollhouse-135.jpg', alt:'test'}       
-      ]
-    },
-    {
+      },
+      {
+        projectName:'Through Different Lense',
+        projectLink:'/kubrick',
+        dropdownContent:`Through a Different Lens: Stanley Kubrick Photographs features more than 120 photographs by Kubrick from the Museum’s Look Magazine archive. I worked with Design Director Marissa Martonyi at Museum of the City of New York.
+        Photos courtesy of Brad Farwell.
+        Hyperallergic review
+        2018        
+        `,
+        projectImages:[
+          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Through a Different Lens_ Stanley Kubrick/Screen Shot 2019-03-11 at 5.25.53 PM.png', alt:'test'},
+          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Through a Different Lens_ Stanley Kubrick/Screen Shot 2019-03-11 at 5.26.33 PM.png', alt:'test'}        
+        ]
+      },
+      {
+        projectName:'Stettheimer Dollhouse',
+        projectLink:'/stettheimer',
+        dropdownContent:`The Stettheimer “doll’s house” – an artistic model made over the course of nearly two decades between 1916 and 1935 – is one of the great treasures of the Museum of the City of New York. I provided illustrations for the museum’s exhibition featuring the doll’s house, working with Design Director Marissa Martonyi.
+        2020
+        `,
+        projectImages:[
+          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Stettheimer Dollhouse/BLF-2020-1119-MCNY-StettheimerDollhouse-027.jpg', alt:'test'},
+          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Stettheimer Dollhouse/BLF-2020-1119-MCNY-StettheimerDollhouse-034.jpg', alt:'test'},
+          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Stettheimer Dollhouse/BLF-2020-1119-MCNY-StettheimerDollhouse-048.jpg', alt:'test'}, 
+          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Stettheimer Dollhouse/BLF-2020-1119-MCNY-StettheimerDollhouse-059.jpg', alt:'test'},
+          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Stettheimer Dollhouse/BLF-2020-1119-MCNY-StettheimerDollhouse-135.jpg', alt:'test'}       
+        ]
+      },
+      {
       projectName:'Google Austin',
       projectLink:'/google',
+      dropdownContent:`I designed a floor of Google’s corporate offices in Austin, Texas, while working at GHD Partners. The space is themed in retrofuturism, looking back at stories of imagining the future through design, architecture, and scientific exploration.
+      2019
+      `,
       projectImages:[
         {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7773.jpg', alt:'test'},
         {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7793.jpg', alt:'test'},
@@ -264,26 +249,33 @@ const defaultData = {
         {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7886.jpg', alt:'test'},              
         {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7887-Edit.jpg', alt:'test'},              
       ]
-    },
-    {
-      projectName:'Rebel Women_ Defying Victorianism',
-      projectLink:'/rebel',
-      projectImages:[
-        {image:process.env.PUBLIC_URL + '/images/3-Spaces/Rebel Women_ Defying Victorianism/IMG_7460.jpeg', alt:'test'},
-        {image:process.env.PUBLIC_URL + '/images/3-Spaces/Rebel Women_ Defying Victorianism/IMG_7466.jpeg', alt:'test'},
-        {image:process.env.PUBLIC_URL + '/images/3-Spaces/Rebel Women_ Defying Victorianism/IMG_7469.jpeg', alt:'test'}           
-      ]
-    },
-    {
-      projectName:'Pernod Ricard',
-      projectLink:'/pernod',
-      projectImages:[
-        {image:process.env.PUBLIC_URL + '/images/3-Spaces/Pernod Ricard/_DSC4716.jpg', alt:'test'},
-        {image:process.env.PUBLIC_URL + '/images/3-Spaces/Pernod Ricard/_DSC4726.jpg', alt:'test'},
-        {image:process.env.PUBLIC_URL + '/images/3-Spaces/Pernod Ricard/IMG_8243.jpg', alt:'test'},
-        {image:process.env.PUBLIC_URL + '/images/3-Spaces/Pernod Ricard/IMG_8250.jpg', alt:'test'}           
-      ]
-    }
+      },
+      {
+        projectName:'Rebel Women_ Defying Victorianism',
+        projectLink:'/rebel',
+        dropdownContent:`This exhibition focused on the untold stories of the city’s independent, unconventional, and path-breaking women who had an indelible impact on New York’s society, culture, and economy by the turn of the 20th century. I worked with Design Director Marissa Martonyi at Museum of the City of New York.
+        2018
+        
+        `,
+        projectImages:[
+          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Rebel Women_ Defying Victorianism/IMG_7460.jpeg', alt:'test'},
+          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Rebel Women_ Defying Victorianism/IMG_7466.jpeg', alt:'test'},
+          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Rebel Women_ Defying Victorianism/IMG_7469.jpeg', alt:'test'}           
+        ]
+      },
+      {
+        projectName:'Pernod Ricard',
+        projectLink:'/pernod',
+        dropdownContent:`I designed wall graphics for Pernod Ricard, a global leader in wine and spirits, while working at GHD Partners. The Impress space, in their New York corporate office, features art-deco inspired vinyl graphics. 
+        2019            
+        `,
+        projectImages:[
+          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Pernod Ricard/_DSC4716.jpg', alt:'test'},
+          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Pernod Ricard/_DSC4726.jpg', alt:'test'},
+          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Pernod Ricard/IMG_8243.jpg', alt:'test'},
+          {image:process.env.PUBLIC_URL + '/images/3-Spaces/Pernod Ricard/IMG_8250.jpg', alt:'test'}           
+        ]
+      }
     ]
   }
 
