@@ -54,8 +54,8 @@ const Page = ({noDropDown, title, link, content, images, setActive, pageName, ac
                         Your browser does not support HTML5 video.
                     </video>
                     </a>:
-                    <Link key={`${pageName}${i}${image.alt}`} to={image.link !== '' ? `/${image.link}` : ''}>
-                    <img data-project={image.project} key={`${pageName}${i}${image.alt}image`} src={image.image} alt={image.alt} className='projectImage'/>
+                    <Link key={`${pageName}${i}${image.alt}`} to={ `/${image.link}`} style={image.link === '' ? {cursor: 'default'}: {}}>
+                    <img style={image.link === '' ? {cursor: 'default'}: {}} data-project={image.project} key={`${pageName}${i}${image.alt}image`} src={image.image} alt={image.alt} className='projectImage'/>
                     </Link>}
                 </>
                 )

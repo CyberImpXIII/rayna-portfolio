@@ -53,21 +53,21 @@ const defaultData = {
         project:'symposia'
       },{
         navItemName:'Farmshelf',
-        navItemPageContent:`Senior Graphic Designer, 2019-2020
+        navItemPageContent:`Senior Graphic Designer, 2019&#8211;2020
         <a href='/farmshelf'>See more →</a>        
         `,
         navItemLink:'farmshelf',
         project:'farmshelf'
       },{
-        navItemName:'Farmshelf',
-        navItemPageContent:`Conceptualized and edited a video for marketing of new product.
+        navItemName:'Farmshelf Video',
+        navItemPageContent:`Conceptualized and edited a video for marketing of new product,
         2020               
         `,
         navItemLink:'farmshelf',
         project:'farmshelf2'
       },{
         navItemName:'Farmshelf Website',
-        navItemPageContent:`Designed, produced and launched website for food-tech startup.
+        navItemPageContent:`Designed, produced and launched website for food-tech startup,
         2020                      
         `,
         navItemLink:'farmshelf',
@@ -75,7 +75,7 @@ const defaultData = {
       },{
         navItemName:`Museum of the 
         City of New York`,
-        navItemPageContent:`Graphic Designer, 2017-2018
+        navItemPageContent:`Graphic Designer, 2017&#8211;2018
         <a href='/museumotcny'>See more →</a>           
         `,
         navItemLink:'museumotcny',
@@ -89,7 +89,7 @@ const defaultData = {
         project:'fletchersfae'
       },{
         navItemName:'Leg Room',
-        navItemPageContent:`Illustration and poster design for short film titled Leg Room. 2022           
+        navItemPageContent:`Illustration and poster design for short film titled Leg Room, 2022           
         `,
         navItemLink:'',
         project:'legroom'
@@ -109,17 +109,15 @@ const defaultData = {
         navItemLink:'google',
         project:'google'
       },{
-        navItemName:'Rebel Women: Defying Victorianism',
-        navItemPageContent:`Dropdown on spaces page:
-        Exhibition design, 2018
+        navItemName:'Rebel Women: <br/>Defying Victorianism',
+        navItemPageContent:`Exhibition design, MCNY, 2018
         <a href='/rebel'>See more →</a>        
         `,
         navItemLink:'rebel',
         project:'rebel'
       },{
         navItemName:'Stettheimer Dollhouse',
-        navItemPageContent:`
-        Illustration, 2020
+        navItemPageContent:`Illustration, MCNY, 2020
         <a href='/stettheimer'>See more →</a>
         `,
         navItemLink:'stettheimer',
@@ -142,7 +140,7 @@ const defaultData = {
     ],
     projects:[
       {
-        projectName:'Corderoy',
+        projectName:'A City for Corduroy',
         projectLink:'/corduroy',
         dropdownContent:`This exhibition of Don Freeman’s work featured drawings, paintings, publications, and prints, as well as the artist’s original studies and sketches of Corduroy and other characters. I created the main environmental graphics, provided illustrations, and assisted exhibition design under Design Director Marissa Martonyi.
 
@@ -158,6 +156,7 @@ const defaultData = {
         projectName:'Farmshelf',
         projectLink:'/Farmshelf',
         dropdownContent:`I was responsible for all the visual style, design and photography at Farmshelf. I evolved the design system to create consistency, increase brand awareness and accommodate growth.
+        2019&#8211;2020
         `,
         projectImages:[{image:process.env.PUBLIC_URL + '/images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_bookmark.png', alt:'test'}, 
         {image:process.env.PUBLIC_URL + '/images/1-Print/2-Farmshelf/Farmshelf-mockups_9-26-21_collateral-booklet.png', alt:'test'}, 
@@ -179,10 +178,10 @@ const defaultData = {
         {image:process.env.PUBLIC_URL + '/images/1-Print/1- Symposia/Symposia WEBSITE MOCKUPS5.png', alt:'test'}]
       },
       {
-        projectName:'Museum of the City of New York',
+        projectName:'Museum of the <br/>City of New York',
         projectLink:'/museumotcny',
         dropdownContent:`Created original work for marketing, exhibitions, wayfinding, and online shop.
-        2017-2018
+        2017&#8211;2018
         `,
         projectImages:[
           {image:process.env.PUBLIC_URL + '/images/1-Print/3-Museum of the City of New York/1-MCNY mockups_uptown-bounce.png', alt:'test'}, 
@@ -210,7 +209,7 @@ const defaultData = {
         projectLink:'/kubrick',
         dropdownContent:`Through a Different Lens: Stanley Kubrick Photographs features more than 120 photographs by Kubrick from the Museum’s Look Magazine archive. I worked with Design Director Marissa Martonyi at Museum of the City of New York.
         Photos courtesy of Brad Farwell.
-        Hyperallergic review
+        <a href="https://hyperallergic.com/449142/stanley-kubrick-through-a-different-lens-museum-of-the-city-of-new-york/">Hyperallergic review</a>
         2018        
         `,
         projectImages:[
@@ -251,7 +250,7 @@ const defaultData = {
       ]
       },
       {
-        projectName:'Rebel Women_ Defying Victorianism',
+        projectName:'Rebel Women: <br/>Defying Victorianism',
         projectLink:'/rebel',
         dropdownContent:`This exhibition focused on the untold stories of the city’s independent, unconventional, and path-breaking women who had an indelible impact on New York’s society, culture, and economy by the turn of the 20th century. I worked with Design Director Marissa Martonyi at Museum of the City of New York.
         2018

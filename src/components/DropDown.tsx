@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react"
-import { Link } from "react-router-dom";
+import { useState } from "react"
+
 import DownArrow from "./DownArrow";
 import '../styles/DropDown.css'
 import quickNavProps from "../interfaces/QuickNavProps";
@@ -13,7 +13,7 @@ function DropDown({noDropDown, title, content}:quickNavProps){
         <div style={noDropDown || content ==='' ?{top:'-105px', transition:'top .3s'}:{transition:'top .3s'}} className='quicknav' onMouseOver={()=>{!dropDownActive && setDropDownActive(true)}}>
           <div>
             <div style={{display:'flex'}}>
-              <div className='dropDownTitle title'>{title}</div>
+              <div className='dropDownTitle title'>{parse(title)}</div>
               <div className='quicknavbutton'><DownArrow dropDown={dropDownActive}/></div>
             </div>
               <div className='dropdownWrapper'>
