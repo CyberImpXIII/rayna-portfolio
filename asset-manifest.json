@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff6b7c5d.css",
-    "main.js": "/static/js/main.7a713ac0.js",
-    "static/js/787.6d6cbb34.chunk.js": "/static/js/787.6d6cbb34.chunk.js",
-    "index.html": "/index.html",
-    "main.ff6b7c5d.css.map": "/static/css/main.ff6b7c5d.css.map",
-    "main.7a713ac0.js.map": "/static/js/main.7a713ac0.js.map",
-    "787.6d6cbb34.chunk.js.map": "/static/js/787.6d6cbb34.chunk.js.map"
+    "main.css": "/www.raynaweingord.com/static/css/main.ff6b7c5d.css",
+    "main.js": "/www.raynaweingord.com/static/js/main.42b110f4.js",
+    "static/js/787.6d6cbb34.chunk.js": "/www.raynaweingord.com/static/js/787.6d6cbb34.chunk.js",
+    "index.html": "/www.raynaweingord.com/index.html",
+    "main.ff6b7c5d.css.map": "/www.raynaweingord.com/static/css/main.ff6b7c5d.css.map",
+    "main.42b110f4.js.map": "/www.raynaweingord.com/static/js/main.42b110f4.js.map",
+    "787.6d6cbb34.chunk.js.map": "/www.raynaweingord.com/static/js/787.6d6cbb34.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ff6b7c5d.css",
-    "static/js/main.7a713ac0.js"
+    "static/js/main.42b110f4.js"
   ]
 }
