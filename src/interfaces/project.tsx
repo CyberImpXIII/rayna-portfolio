@@ -1,10 +1,8 @@
+import projectImage from './ProjectImage'
+
 export default interface Project{
-    _createdAt:Date,
-    _id:string,
-    _rev:string,
-    _type:string,
-    _updatedAt:Date,
-    content:object,
-    coverImage:object,
-    slug: object,
-    title: string}
+    projectName:string,
+    projectLink:string,
+    dropdownContent:string,
+    projectImages:projectImage[]
+}

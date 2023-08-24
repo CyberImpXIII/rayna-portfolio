@@ -1,13 +1,6 @@
 import pageImageProps from "./pageImageProps"
 import navItem from "./navItem"
-import projectImage from "./ProjectImage"
-
-interface project{
-    projectName:string,
-    projectLink:string,
-    dropdownContent:string,
-    projectImages:projectImage[]
-}
+import project from './project'
 
 export default  interface data {
     pages:{

@@ -1,0 +1,7 @@
+.backArrow{
+    position:fixed;
+    width:120px;
+    height:60px;
+    background-color: black;
+    color: white;
+}

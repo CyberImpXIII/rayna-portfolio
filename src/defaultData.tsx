@@ -45,6 +45,7 @@ const defaultData = {
     ],
     navItems:[
       {
+        position:1,
         navItemName:'Symposia',
         navItemPageContent:`Hotel identity exploration, 2021
         <a href='/symposia'>See more →</a>
@@ -52,6 +53,7 @@ const defaultData = {
         navItemLink:'symposia',
         project:'symposia'
       },{
+        position:2,
         navItemName:'Farmshelf',
         navItemPageContent:`Senior Graphic Designer, 2019&#8211;2020
         <a href='/farmshelf'>See more →</a>        
@@ -59,6 +61,7 @@ const defaultData = {
         navItemLink:'farmshelf',
         project:'farmshelf'
       },{
+        position:3,
         navItemName:'Farmshelf Video',
         navItemPageContent:`Conceptualized and edited a video for marketing of new product,
         2020               
@@ -66,6 +69,7 @@ const defaultData = {
         navItemLink:'farmshelf',
         project:'farmshelf2'
       },{
+        position:4,
         navItemName:'Farmshelf Website',
         navItemPageContent:`Designed, produced and launched website for food-tech startup,
         2020                      
@@ -73,14 +77,15 @@ const defaultData = {
         navItemLink:'farmshelf',
         project:'website-mockup'
       },{
-        navItemName:`Museum of the 
-        City of New York`,
+        position:5,
+        navItemName:`Museum of the<br/>City of New York`,
         navItemPageContent:`Graphic Designer, 2017&#8211;2018
         <a href='/museumotcny'>See more →</a>           
         `,
         navItemLink:'museumotcny',
         project:'museumotcny'
       },{
+        position:6,
         navItemName:'Fletcher’s Fae',
         navItemPageContent:`Identity and packaging, 2020
         <a href='/fletchersfae'>See more →</a>             
@@ -88,12 +93,14 @@ const defaultData = {
         navItemLink:'fletchersfae',
         project:'fletchersfae'
       },{
+        position:7,
         navItemName:'Leg Room',
         navItemPageContent:`Illustration and poster design for short film titled Leg Room, 2022           
         `,
         navItemLink:'',
         project:'legroom'
       },{
+        position:8,
         navItemName:'A City for Corduroy',
         navItemPageContent:`Exhibition design, 2018
         <a href='/corduroy'>See more →</a>
@@ -102,6 +109,7 @@ const defaultData = {
         navItemLink:'corduroy',
         project:'corduroy'
       },{
+        position:9,
         navItemName:'Google Austin',
         navItemPageContent:`Environmental design, 2019
         <a href='/google'>See more →</a>
@@ -109,6 +117,7 @@ const defaultData = {
         navItemLink:'google',
         project:'google'
       },{
+        position:10,
         navItemName:'Rebel Women: <br/>Defying Victorianism',
         navItemPageContent:`Exhibition design, MCNY, 2018
         <a href='/rebel'>See more →</a>        
@@ -116,6 +125,7 @@ const defaultData = {
         navItemLink:'rebel',
         project:'rebel'
       },{
+        position:11,
         navItemName:'Stettheimer Dollhouse',
         navItemPageContent:`Illustration, MCNY, 2020
         <a href='/stettheimer'>See more →</a>
@@ -123,6 +133,7 @@ const defaultData = {
         navItemLink:'stettheimer',
         project:'stettheimer'
       },{
+        position:12,
         navItemName:'Through a Different Lens',
         navItemPageContent:`Exhibition design, MCNY, 2018
         <a href='/kubrick'>See more →</a>
@@ -130,6 +141,7 @@ const defaultData = {
         navItemLink:'kubrick',
         project:'kubrick'
       },{
+        position:13,
         navItemName:'Pernod Ricard',
         navItemPageContent:`Environmental design, 2019
         <a href='/pernod'>See more →</a>        
@@ -239,7 +251,7 @@ const defaultData = {
       `,
       projectImages:[
         {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7773.jpg', alt:'test'},
-        {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7793.jpg', alt:'test'},
+        {image:process.env.PUBLIC_URL + '/imges/3-Spaces/Google Austin/IMG_7793.jpg', alt:'test'},
         {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7799.jpg', alt:'test'}, 
         {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7837-Edit.jpg', alt:'test'},
         {image:process.env.PUBLIC_URL + '/images/3-Spaces/Google Austin/IMG_7855.jpg', alt:'test'},

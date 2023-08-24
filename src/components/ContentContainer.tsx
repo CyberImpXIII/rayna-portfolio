@@ -16,6 +16,7 @@ const ContentContainer = ({link, title, content, noDropDown, data, aboutActive, 
   ])
   
   useEffect(()=>{
+    console.log(data)
     let imagestemp:PageImageProps[] = [...data.pages[0].pageImages]
     for (let i = 1; i < data.pages.length; i++){
       imagestemp = imagestemp.concat(data.pages[i].pageImages)
@@ -25,15 +26,15 @@ const ContentContainer = ({link, title, content, noDropDown, data, aboutActive, 
     return(
         <div className={`pageContainer ${aboutActive && 'aboutActive'}`} >
         <Routes>
-          {data.pages.map(({pageName, pageImages})=>(
-          <Route key={`${pageName}pageContainerRoute`} path={`/${pageName}`} element={<Page link={link} content={content} title={title} noDropDown={noDropDown} active={active} pageName={pageName} setActive={setActive} images={pageImages}/>} />
+          {data.pages.map(({pageName, pageImages}, i)=>(
+          <Route key={`${pageName}pageContainerRoute${i}`} path={`/${pageName}`} element={<Page link={link} content={content} title={title} noDropDown={noDropDown} active={active} pageName={pageName} setActive={setActive} images={pageImages}/>} />
           ))}
-          {data.projects.map(({dropdownContent, projectName, projectLink, projectImages})=>(
-            <Route key={`${projectName}projectContainerRoute`} path={projectLink} element={<Project content={dropdownContent} title={projectName} projectImages={projectImages} />} />
+          {data.projects.map(({dropdownContent, projectName, projectLink, projectImages}, i)=>(
+            <Route key={`${projectName}projectContainerRoute${i}`} path={projectLink} element={<Project content={dropdownContent} title={projectName} projectImages={projectImages} />} />
           )
           )}
           <Route path={`/About`} element={<About />} />
-          <Route path="/" element={<Page active={active} pageName={'/'} link={link} content={content} title={title} setActive={setActive} images={images} />} />
+          <Route path="/" element={<Page key={`home`} active={active} pageName={'/'} link={link} content={content} title={title} setActive={setActive} images={images} />} />
         </Routes>
       </div>
     )

@@ -1,5 +1,6 @@
 import projectImage from '../../interfaces/ProjectImage'
 import Dropdown from '../DropDown'
+import BackArrow from '../backArrow'
 
 interface projectProps {
     projectImages: projectImage[],
@@ -16,6 +17,7 @@ const Project = ({projectImages, title, content}:projectProps)=>{
         {projectImages.map((print)=>{
             return(<img src={print.image} alt={print.alt} className='projectImage'/>)
         })}
+        <BackArrow />
         </div>
     )
 }
