@@ -5,7 +5,6 @@ import reportWebVitals from './reportWebVitals';
 import App from './components/App';
 import ScrollToTop from './components/ScrolltoTop';
 
-
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );

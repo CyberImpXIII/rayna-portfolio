@@ -8,7 +8,8 @@ interface projectProps {
     image: string,
     link: string,
     alt: string,
-    project?: string
+    project?: string,
+
 }    
 
 interface pageProps{
@@ -19,10 +20,13 @@ interface pageProps{
     noDropDown?:boolean,
     title?:string,
     content?:string,
-    link?:string
+    link?:string,
+    setDropDownActive?:Function,
+    dropDownActive?:boolean,
+    from?:string
 }
 
-const Page = ({noDropDown, title, link, content, images, setActive, pageName, active}: pageProps)=>{
+const Page = ({noDropDown, title, link, content, images, setActive, pageName, active, setDropDownActive, dropDownActive}: pageProps)=>{
     const ref = useRef<HTMLDivElement>(null)
    
     useEffect(()=>{
@@ -44,7 +48,7 @@ const Page = ({noDropDown, title, link, content, images, setActive, pageName, ac
 
     return(
         <div ref={ref} key={`${pageName}ref`}>
-        <DropDown noDropDown={noDropDown} title={title} content={content} link={link}/>
+        <DropDown setDropDownActive={setDropDownActive} dropDownActive={dropDownActive} noDropDown={noDropDown} title={title} content={content} link={link}/>
         {images.map((image, i)=>{
             return(<>
                 {image.image.includes('.mp4') ?

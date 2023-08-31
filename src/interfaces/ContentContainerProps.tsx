@@ -4,11 +4,13 @@ interface ContentContainerProps {
     data:data,
     setActive:Function,
     active:string,
-    aboutActive:Boolean    ,
+    aboutActive:boolean,
     noDropDown?:boolean,
     title?:string,
     content?:string,
     link?:string
+    setDropDownActive:Function,
+    dropDownActive:boolean
   }
 
 export default ContentContainerProps

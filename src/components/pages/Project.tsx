@@ -5,19 +5,21 @@ import BackArrow from '../backArrow'
 interface projectProps {
     projectImages: projectImage[],
     content:string,
-    title:string
+    title:string,
+    setDropDownActive:Function,
+    dropDownActive:boolean,
+    from?:string
 }
 
-const Project = ({projectImages, title, content}:projectProps)=>{
-
+const Project = ({from, projectImages, title, content, setDropDownActive, dropDownActive}:projectProps)=>{
 
     return(
         <div>
-        <Dropdown title={title} content={content} link={''}/>
-        {projectImages.map((print)=>{
-            return(<img src={print.image} alt={print.alt} className='projectImage'/>)
+        <Dropdown setDropDownActive={setDropDownActive} dropDownActive={dropDownActive} title={title} content={content} link={''}/>
+        {projectImages.map((print, i)=>{
+            return(<img key={`projectimage${i}`} src={print.image} alt={print.alt} className='projectImage'/>)
         })}
-        <BackArrow />
+        <BackArrow from={from} setDropDownActive={setDropDownActive}/>
         </div>
     )
 }

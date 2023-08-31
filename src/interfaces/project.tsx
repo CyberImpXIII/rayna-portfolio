@@ -4,5 +4,6 @@ export default interface Project{
     projectName:string,
     projectLink:string,
     dropdownContent:string,
-    projectImages:projectImage[]
+    projectImages:projectImage[],
+    from?:string
 }

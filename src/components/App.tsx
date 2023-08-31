@@ -5,21 +5,21 @@ import ContentContainer from './ContentContainer';
 import {useState, useEffect} from 'react'
 import data from '../interfaces/data'
 import defaultData from '../defaultData';
-import quickNavProps from '../interfaces/QuickNavProps';
+import quickNavProps from '../interfaces/dropdownProps';
 import axios from 'axios'
 import navItem from '../interfaces/navItem'
 import Project from '../interfaces/project'
-
-interface image {
-  url:'string',
-  alt:'string'
-}
+import { useNavigate } from 'react-router-dom'
 
 const App=()=>{
+  const navigate = useNavigate();
+  const [dropDownActive, setDropDownActive] = useState<boolean>(false);
   const [active, setActive] = useState<string>('symposia')
   const [data, setData] = useState<data>(defaultData)
   const [navData, setNavData] = useState<quickNavProps>(
     {
+      dropDownActive:false,
+      setDropDownActive:setDropDownActive,
       title:"Symposia",
       content:`Hotel identity exploration, 2021
       See more →`,
@@ -31,7 +31,6 @@ const App=()=>{
   const [mobileNavActive, setMobileNavActive] = useState<boolean>(false);
   const [aboutActive, setAboutActive] = useState(window.location.href.includes('about'));
   const [noDropDown, setNoDropDown] = useState(window.location.href.includes('illustration') || window.location.href.includes('about'))
-
   useEffect(()=>{
     for (let i =0; i < data.navItems.length ; i++){
       if(data.navItems[i].project === active){
@@ -100,9 +99,9 @@ const App=()=>{
           image: 'string',
           alt: 'string'
         }]
-        project.images.forEach((image:image)=>{
+        project.images.forEach((image:any)=>{
           imagetemp.push({
-            image:image.url,
+            image:image.url.url,
             alt:image.alt
           })
         })
@@ -129,7 +128,6 @@ const App=()=>{
         }]
       }]
       newRawPages.forEach((page:any)=>{
-        console.log(page)
         let imagetemp = [{
           image: 'string',
           link: 'string',
@@ -137,7 +135,6 @@ const App=()=>{
           project:'string'
         }]
         page.images.forEach((image:any)=>{
-          console.log(image.image.url)
           imagetemp.push({
             image: image.image === null ? image.video.url : image.image.url,
             link: image.link === null ? '' : image.link,
@@ -181,6 +178,8 @@ https://mejlta66.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type
         <Header mobileNavActive={mobileNavActive} setMobileNavActive={setMobileNavActive} setUrl={setUrl}/>
         <Nav noDropDown={noDropDown} setNoDropDown={setNoDropDown} setAboutActive={setAboutActive} aboutActive={aboutActive} setMobileNavActive={setMobileNavActive} mobileNavActive={mobileNavActive} url={url} setUrl={setUrl} />
         <ContentContainer 
+          setDropDownActive={setDropDownActive}
+          dropDownActive={dropDownActive}
           noDropDown={noDropDown} 
           title={navData.title} 
           content={navData.content} 
