@@ -8,7 +8,7 @@ interface projectProps {
     title:string,
     setDropDownActive:Function,
     dropDownActive:boolean,
-    from?:string
+    from:string
 }
 
 const Project = ({from, projectImages, title, content, setDropDownActive, dropDownActive}:projectProps)=>{
@@ -19,7 +19,7 @@ const Project = ({from, projectImages, title, content, setDropDownActive, dropDo
         {projectImages.map((print, i)=>{
             return(<img key={`projectimage${i}`} src={print.image} alt={print.alt} className='projectImage'/>)
         })}
-        <BackArrow from={from} setDropDownActive={setDropDownActive}/>
+        <BackArrow from={from}/>
         </div>
     )
 }

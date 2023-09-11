@@ -1,9 +1,19 @@
 .backArrow{
     position:fixed;
-    width:120px;
-    height:60px;
+    width:220px;
     background-color: black;
-    color: white;
     top:535px;
     right:70px;
+    padding:5px;
+}
+.backArrow > div{
+    color: var(--cream);
+    font-family: eskapade-fraktur,serif;
+    font-size:40px;
+}
+
+.backArrowSVG{
+    fill:white;
+    transform: rotate(90deg);
+    height:26px;
 }

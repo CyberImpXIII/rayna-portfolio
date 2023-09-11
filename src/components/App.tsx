@@ -9,10 +9,8 @@ import quickNavProps from '../interfaces/dropdownProps';
 import axios from 'axios'
 import navItem from '../interfaces/navItem'
 import Project from '../interfaces/project'
-import { useNavigate } from 'react-router-dom'
 
 const App=()=>{
-  const navigate = useNavigate();
   const [dropDownActive, setDropDownActive] = useState<boolean>(false);
   const [active, setActive] = useState<string>('symposia')
   const [data, setData] = useState<data>(defaultData)
@@ -155,22 +153,10 @@ const App=()=>{
         projects:newProjects,
         navItems:newNavItems
       })
+      return true;
   })()
 },[])
-/* 
-https://mejlta66.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type+%3D%3D+%27page%27%5D%7B%0A++++title%2C%0A++++content%2C%0A++++link%2C%0A++++images%5B%5D%7B%0A++++++%27url%27%3Aimage.asset-%3E%7Burl%7D%2C%0A++++++alt%0A++++%7D%0A%7D%0A&perspective=published
 
-*[_type == 'page']{
-  title,
-  content,
-  link,
-  images[]{
-    'url':image.asset->{url},
-    alt
-  }
-}
-
-*/
   return (
     <div className="App">
         <link rel="stylesheet" href="https://use.typekit.net/cdp3qbe.css"></link>
