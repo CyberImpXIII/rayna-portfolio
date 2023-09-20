@@ -1,7 +1,7 @@
 import '../styles/DownArrow.css'
 
-const DownArrow = ({setDropDownActive, dropDownActive}:{setDropDownActive?:Function, dropDownActive?:boolean})=>(
-<div onClick={()=>{setDropDownActive && dropDownActive === true && setDropDownActive(!dropDownActive)}} className='downArrowContainer'>
+const DownArrow = ({dropDownActive}:{dropDownActive?:boolean})=>(
+<div className='downArrowContainer'>
     <svg className='downArrow' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
         viewBox="0 0 330 330" xmlSpace="preserve">
     <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393

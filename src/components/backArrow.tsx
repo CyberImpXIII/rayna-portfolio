@@ -20,7 +20,7 @@ const BackArrow = ({from}:{from:string}) => {
         setFromString(fromHandler(from));
     },[from])
     return(
-    <a href={from ==='/' ? from : `/#${from}`} className='backArrow'>
+    <a href={from ==='/' ? '#' : `/#${from}`} className='backArrow'>
         <div>
             <svg className='backArrowSVG' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 viewBox="0 0 330 330" xmlSpace="preserve">
